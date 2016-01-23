@@ -1,3 +1,3 @@
 # Week 1 
 
-repos go in this folder.
+READMEs go in this folder.
