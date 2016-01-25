@@ -1,6 +1,6 @@
 # UNIT & INTEGRATION TESTING
 ## UNIT TESTING
-<p align="center"><img src="../assets/unit-test.jpg" alt="Unit testing" /></p>
+<p align="center"><img src="assets/unit-test.jpg" alt="Unit testing" /></p>
 
 ### Definition
 Unit testing is a method of **testing individual units of code** to check whether or not they are fit for use. The **tests** are **short** pieces of **code** created **specifically** for this.
@@ -38,14 +38,14 @@ assert.equals(actual, expected, "Success message")
 
 ## INTEGRATION TESTING
 
-<p align="center"><img src="../assets/integration-test.jpg" alt="Unit testing"/></p>
+<p align="center"><img src="assets/integration-test.jpg" alt="Unit testing"/></p>
 
 ### Definition
 Integration testing is to **test the collaboration of multiple units** (that have hopefully been **unit tested already**) and is the phase after unit testing. The purpose of this is to check things like **performance**, **functionality** and **reliability**.
 
 ## PROS & CONS OF UNIT TESTING
 
-<p align="center"><img src="../assets/fight-bugs.jpg" alt="fight-bugs"/ style="size=20%"><img src="../assets/bugs.jpg" alt="bugs" style="size=20%"/></p>
+<p align="center"><img src="assets/fight-bugs.jpg" alt="fight-bugs"/ style="size=20%"><img src="assets/bugs.jpg" alt="bugs" style="size=20%"/></p>
 
 <table align="center">
     <th style="font-size:24">PROS</th>
@@ -79,7 +79,7 @@ Integration testing is to **test the collaboration of multiple units** (that hav
 
 ### INTEGRATION TESTING
 
-<p align="center"><img src="../assets/module-fail.jpg" alt="module-fail"></p>
+<p align="center"><img src="assets/module-fail.jpg" alt="module-fail"></p>
 
 <table align="center">
     <th style="font-size:24;color='green';">GENERAL PROS</th>
@@ -99,7 +99,7 @@ Integration testing is to **test the collaboration of multiple units** (that hav
 ##### Big Bang (e.g. Usage / Model Testing)
 Developed modules are coupled together to form a **complete software system** to test.
 **All components** are thus integrated at the **same time**.
-<p align="center"><img src="../assets/big-bang.jpg" alt="module-fail"></p>
+<p align="center"><img src="assets/big-bang.jpg" alt="module-fail"></p>
 
 <table align="center">
     <th style="font-size:24;color='green';">GENERAL PROS</th>
@@ -116,7 +116,7 @@ Developed modules are coupled together to form a **complete software system** to
 
 ##### Bottom Up Testing
 Lowest level components tested first, up to the highest-level component.
-<p align ="center"><img src="../assets/pyramid.jpg" alt="bottom-up"/></p>
+<p align ="center"><img src="assets/pyramid.jpg" alt="bottom-up"/></p>
 
 <table align="center">
     <th style="font-size:24;color='green';">GENERAL PROS</th>
@@ -137,7 +137,7 @@ Lowest level components tested first, up to the highest-level component.
 
 ##### Top Down Testing
 Highest level components tested first, down to the lowest-level component.
-<p align ="center"><img src="../assets/pyramid2.jpg" alt="bottom-up"/></p>
+<p align ="center"><img src="assets/pyramid2.jpg" alt="bottom-up"/></p>
 
 <table align="center">
     <th style="font-size:24;color='green';">PROS</th>
@@ -158,7 +158,7 @@ Highest level components tested first, down to the lowest-level component.
 
 ##### Sandwich Testing
 Mixing top-down and bottom-up testing.
-<p align ="center"><img src="../assets/pyramid2.jpg" alt="top-down"/><img src="../assets/sandwich.jpg" alt="bottom-up"/><img src="../assets/pyramid.jpg" alt="bottom-up"/></p>
+<p align ="center"><img src="assets/pyramid2.jpg" alt="top-down"/><img src="assets/sandwich.jpg" alt="bottom-up"/><img src="assets/pyramid.jpg" alt="bottom-up"/></p>
 
 ##### Risky - Hardest
 The **riskiest / hardest** module is **tested first**.
