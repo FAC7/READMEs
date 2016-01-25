@@ -103,12 +103,8 @@ Developed modules are coupled together to form a **complete software system** to
     <th style="font-size:24;color='green';">GENERAL PROS</th>
     <th style="font-size:24";color='red';>GENERAL CONS</th>
     <tr>
-        <td> Late integration allowed.</td>
+        <td> **Fast & Cheap**. Late integration allowed.</td>
         <td> **Difficult to trace origin of bugs**.</td>
-    </tr>
-    <tr>
-        <td></td>
-        <td>**Time** consuming</td>
     </tr>
 <table>
 
