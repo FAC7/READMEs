@@ -33,6 +33,8 @@ The features available vary with the particular CI platform, but common features
 * Integration with issues tracking systems
 * Auto-deployment
     * Some CI platforms have tools to aid deployment of a build (subject to tests passing)
+* Build pipelines
+    * Hook together several build processes, with each successive process only running if the previous one completed successfully.
 * Lots more...
 
 
@@ -48,3 +50,7 @@ This is TeamCity's view of a builds history, showing the runs that have resulted
 This is another view of TeamCity showing several running builds, one of which is failing.
 
 ![oops](http://screenshots.s32cdn.com/41/406599/multiplatform.png)
+
+
+## Useful Links
+A brief breakdown of the CI breakdown can be found at [ThoughtWorks](https://www.thoughtworks.com/continuous-integration). Anyone looking for a dissenting opinion can [look here](http://www.yegor256.com/2014/10/08/continuous-integration-is-dead.html).
