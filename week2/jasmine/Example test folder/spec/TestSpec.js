@@ -6,17 +6,17 @@ describe("The example function should", function() {
   });
 });
 
-describe("The double function", function() {
+describe("The double function should", function() {
     var arr = [1, 2, 4];
     var actual = double(arr);
-    it("should return a simple array, doubled", function (){
+    it("return a simple array, doubled", function (){
         expect(actual).toEqual([2, 4, 8]);
         expect(actual).not.toEqual("a string");
     });
 
     var arr2 = [1.1, 2.2, 3.3];
-    var actual2 = double(arr);
-    it("should work for non-integers", function() {
+    var actual2 = double(arr2);
+    it("work for non-integers", function() {
         expect(actual2).toEqual([2.2, 4.4, 6.6]);
         expect(actual2).not.toEqual("a string");
     });
