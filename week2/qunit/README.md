@@ -1,6 +1,6 @@
 # Getting started with qunit
 
-1. Create an html file with the following code:
+### 1 Create an html file with the following code:
 
 ```html
 <!DOCTYPE html>
@@ -22,22 +22,50 @@
 ```
 
 
-2. create a file "test.js"
+### 2 create a file "test.js" file
 
 
-3. create a test
-
+### 3 create a test
+function to be tested:
 ```js
     function halfIt(num){
         return num/2;
     }
 ```
-
+test (simple):
 ```js
    test('testmessage',function(assert){
-       assert.equal(halfIt())
+       assert.equal(halfIt(10),5,"Correct, half of 10 is 5! :)")
    })
 ```
+
+### 4 Open index file in browser
+----------------
+----------------
+
+## Random Test
+
+To create more robust tests, sometimes we can implement random tests. The following tests function above halfIt()
+
+
+
+```js
+test('Check the halfIt function with 20 random test', function(assert){
+    //assert.expect takes the number of tests expected to be run
+    assert.expect( 20 );
+    //generate 20 assert.equal tests for numbers between -1000 and 1000
+    for ( var i = 0; i < 20; i++ ){
+        var x = Math.floor( Math.random() * 2001 - 1000 );
+        var halfX = x/2;
+        assert.equal( halfIt(x), halfX, 'Half of ' + x + ' is ' + halfX + ':)');
+    }
+});
+```
+
+
+
+
+
 
 [Useful Guide](http://www.sitepoint.com/getting-started-qunit/)
 
