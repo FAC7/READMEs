@@ -35,17 +35,9 @@ assert.equals(actual, expected, "Success message")
 });
 ````
 
-
-## INTEGRATION TESTING
-
-<p align="center"><img src="assets/integration-test.jpg" alt="Unit testing"/></p>
-
-### Definition
-Integration testing is to **test the collaboration of multiple units** (that have hopefully been **unit tested already**) and is the phase after unit testing. The purpose of this is to check things like **performance**, **functionality** and **reliability**.
-
 ## PROS & CONS OF UNIT TESTING
 
-<p align="center"><img src="assets/fight-bugs.jpg" alt="fight-bugs"/ style="size=20%"><img src="assets/bugs.jpg" alt="bugs" style="size=20%"/></p>
+<p align="center"><img src="assets/fight-bugs.jpg" alt="fight-bugs"/ width=35%><img src="assets/bugs.jpg" alt="bugs" width=35%/></p>
 
 <table align="center">
     <th style="font-size:24">PROS</th>
@@ -76,8 +68,14 @@ Integration testing is to **test the collaboration of multiple units** (that hav
     </tr>
 <table>
 
+## INTEGRATION TESTING
 
-### INTEGRATION TESTING
+<p align="center"><img src="assets/integration-test.jpg" alt="Unit testing"/></p>
+
+### Definition
+Integration testing is to **test the collaboration of multiple units** (that have hopefully been **unit tested already**) and is the phase after unit testing. The purpose of this is to check things like **performance**, **functionality** and **reliability**.
+
+### PROS & CONS OF INTEGRATION TESTING
 
 <p align="center"><img src="assets/module-fail.jpg" alt="module-fail"></p>
 
