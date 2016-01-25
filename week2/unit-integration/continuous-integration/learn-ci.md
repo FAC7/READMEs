@@ -13,7 +13,7 @@ With just one developer, this is basically just automated testing. However, if w
 2. Dev A runs tests locally, all pass, and then pushes
 3. CI service detects Dev A's commits and runs test suite, **passes**
 4. Dev B runs tests locally, all pass, and then pushes
-5. CI service detects Dev B's commits and runts test suite, **fails**
+5. CI service detects Dev B's commits and runs test suite, **fails**
 
 On simple projects, this problem can be avoided by frequently pulling and merging the master branch manually. However, on larger projects with many developers, with complicated dependencies and extensive test and build suites, using a CI can save a lot of time for the developers and introduce a degree of traceability that would otherwise be unavailable.
 
