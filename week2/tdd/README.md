@@ -35,6 +35,9 @@ After the test is passing, refactor your code to check for duplication and impro
 readability. Make sure you refactor by working in small steps and running your
 test often. This ensures that the existing behaviour does not change.
 
+### Example  
+Code example following TDD can be found at ./example-tdd.js
+
 ### References  
 * [Introduction to TDD](http://www.agiledata.org/essays/tdd.html)  
 * [Benefits of TDD](https://en.wikipedia.org/wiki/Test-driven_development#Benefits)
