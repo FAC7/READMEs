@@ -112,6 +112,11 @@ Any matcher can evaluate to *a negative assertion* by chaining the call to expec
 - **toBeNull** : compares against null
 
 
+## Give Jasmine a go
+
+If you'd like to have a go with Jasmine, have a look at the `Example test folder` in this repo, or you can checkout the [official Jamsine repo](https://github.com/jasmine/jasmine/releases) on github.
+
+
 ### Further Reading
 
 + [testing your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
