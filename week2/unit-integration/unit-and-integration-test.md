@@ -178,7 +178,7 @@ assert.equals(a.someOtherProperty, expectedOtherProperty);
 ## READ MORE
 * [Unit testing](https://en.wikipedia.org/wiki/Unit_testing)
 * [Integration testing](https://en.wikipedia.org/wiki/Integration_testing)
-* [Types of integration testing](http://www.softwaretestingstuff.com/2007/10/top-down-testing-vs-bottom-up-testing.html)
+* [Top down vs bottom-up integration testing](http://www.softwaretestingstuff.com/2007/10/top-down-testing-vs-bottom-up-testing.html)
 * <a href="https://msdn.microsoft.com/en-us/library/aa292128(v=vs.71).aspx">Overview</a>
 * [Types of integration testing](http://www.cs.nuim.ie/~fying/PDF/slidescs265.pdf)
 * [Big Bang integration testing](http://istqbexamcertification.com/what-is-big-bang-integration-testing/)
