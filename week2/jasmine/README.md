@@ -8,9 +8,9 @@ One way to think of BDD is basically writing tests in a more descriptive, senten
 
 ### it's super easy to read! :smile: :confetti_ball: :tada: :book:
 
-<h2>Download</h2>
+## Installing Jasmine
 
-To download Jasmine go to the following github repo and download the jasmine-standalone-2.4.1.zip file:
+To install Jasmine go to the following github repo and download the jasmine-standalone-2.4.1.zip file:
 
 https://github.com/jasmine/jasmine/releases
 
@@ -80,11 +80,46 @@ describe("the function we're going to test", function() {
 
 jasmine has a rich set of matchers that can be used to test your functions.
 
+## The different Matchers:
 
-### References
+- **toEqual**
+
+- **toBe** : compares with ===
+
+```
+  it("and has a positive case", function() {
+    expect(true).toBe(true);
+  });
+```
+Any matcher can evaluate to *a negative assertion* by chaining the call to expect with a **not** before calling the matcher.
+```
+  it("and can have a negative case", function() {
+    expect(false).not.toBe(true);
+  });
+```
+- **toThrow** : is for testing if a function throws an exception
+
+- **toBeDefined** / **toBeUndefined**
+
+- **toBeTruthy** / **toBeFalsy**
+
+- **toBeLessThan** / **toBeGreaterThan**
+
+- **toMatch** : is for regular expressions
+
+- **toContain** : is for finding an item in an Array
+
+- **toBeNull** : compares against null
+
+
+### Further Reading
+
++ [testing your JavaScript with Jasmine](http://code.tutsplus.com/tutorials/testing-your-javascript-with-jasmine--net-21229)
 
 + [an introduction to jasmine](http://jasmine.github.io/2.4/introduction.html)
 
 + [an introduction to Behaviour-Driven Development](http://dannorth.net/introducing-bdd/)
 
 + [difference between TDD and BDD](http://joshldavis.com/2013/05/27/difference-between-tdd-and-bdd/)
+
++ [download jasmine](https://github.com/jasmine/jasmine/releases)
