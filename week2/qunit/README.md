@@ -64,17 +64,11 @@ test('Check the halfIt function with 20 random test', function(assert){
 
 
 
-
-
-
 [Useful Guide](http://www.sitepoint.com/getting-started-qunit/)
 
 ----------------
-----------------
-----------------
-
 -----
-### What is asynchronus programming?
+## What is asynchronus programming?
 In programming, we can simplify the definition of synchronous code as “a bunch of statements in sequence”; so each statement in your code is executed one after the other. This means each statement has to wait for the previous one to finish executing.
 
 ```javascript
