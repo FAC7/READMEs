@@ -33,4 +33,10 @@ a step and make necessary changes.
 ### Refactor  
 After the test is passing, refactor your code to check for duplication and improve
 readability. Make sure you refactor by working in small steps and running your
-test often. This ensures that the existing behaviour does not change. 
+test often. This ensures that the existing behaviour does not change.
+
+### References  
+* [Introduction to TDD](http://www.agiledata.org/essays/tdd.html)  
+* [Benefits of TDD](https://en.wikipedia.org/wiki/Test-driven_development#Benefits)
+* [Breakdown of key steps](http://www.santeon.com/insight-blog/video-and-article/33-insight-blog/video-and-article/229-test-driven-development-red-green-refactor#.VqYGo-yLRZE)
+* [This one is just funny](http://www.writemoretests.com/2011/09/test-driven-development-give-me-break.html)
