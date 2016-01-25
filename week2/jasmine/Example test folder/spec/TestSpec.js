@@ -28,3 +28,20 @@ describe("The double function should", function() {
         expect(actual3).not.toEqual("");
     });
 });
+
+describe("the primes function", function() {
+    it('should return true for all prime numbers', function() {
+        var primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71];
+        primes.forEach(function(prime) {
+            var actual4 = isPrime(prime);
+            expect(actual4).toBe(true);
+        });
+    });
+    it('should return false if number is not prime', function() {
+        var nonPrimes = [4,6,8,9,10,12,14,15,16,18,20];
+        nonPrimes.forEach(function(nonPrime) {
+            var actual5 = isPrime(nonPrime);
+            expect(actual5).toBe(false);
+        });
+    });
+});
