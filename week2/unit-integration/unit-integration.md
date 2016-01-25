@@ -1,4 +1,5 @@
-### The code
+## UNIT TEST EXAMPLES
+### The code that gets tested
 ````javascript
 
 function example() {
