@@ -39,7 +39,7 @@ Reference: http://jasmine.github.io/2.2/introduction.html
 In Jasmine tests are split up into 'suites':
 
 + suites `describe` a group of your tests
-+ a suite takes a `string` (with a description of your tests) and a `function` which define the tests
++ a suite takes a `string` (with a description of your tests) and a `function` which defines the tests
 
 A suite starts with `describe` and looks a bit like this:
 
