@@ -40,6 +40,7 @@ Code example following TDD can be found at ./example-tdd.js
 
 ### References  
 * [Introduction to TDD](http://www.agiledata.org/essays/tdd.html)  
+* [A fun mneumonic Red Green Refactor to memorise the TDD process] (https://github.com/FAC7/READMEs/blob/master/week2/tdd/tddredgreenrefactor.md) 
 * [Benefits of TDD](https://en.wikipedia.org/wiki/Test-driven_development#Benefits)
 * [Breakdown of key steps](http://www.santeon.com/insight-blog/video-and-article/33-insight-blog/video-and-article/229-test-driven-development-red-green-refactor#.VqYGo-yLRZE)
 * [This one is just funny](http://www.writemoretests.com/2011/09/test-driven-development-give-me-break.html)
