@@ -7,7 +7,7 @@ Unit testing is a method of **testing individual units of code** to check whethe
 
 Depending on the specific type of programming being done **what a unit is can** actually **vary**. In most cases it can be viewed as the smallest piece of testable code but this is not always the case.
 
-In object-oriented programming, for example, **a unit could be** an entire interface like **a class**. Ideally each test case would be separate from each other and you could substitute data in if needed to help when testing. For example **a mock object** could be used over a real object to help keep things controlled and to help make sure the code code works in the intended manner.
+In object-oriented programming, for example, **a unit could be** an entire interface like **a class**. Ideally each test case would be separate from each other and you could substitute data in if needed to help when testing. For example **a mock object** could be used over a real object to help keep things controlled and to help make sure the code works in the intended manner.
 
 ### UNIT TEST EXAMPLE
 ### The code (to be tested)
