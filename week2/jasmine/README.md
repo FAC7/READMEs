@@ -2,7 +2,7 @@
 
 ![Jasmine](https://upload.wikimedia.org/wikipedia/en/2/22/Logo_jasmine.svg)
 
-Jamsine is a behaviour-driven development (BDD) framework for testing JavaScript. It doesn't need the DOM and can run anywhere JavaScript can run.
+Jasmine is a behaviour-driven development (BDD) framework for testing JavaScript. It doesn't need the DOM and can run anywhere JavaScript can run.
 
 One way to think of BDD is basically writing tests in a more descriptive, sentence like style. One of the great things about Jasmine is that:
 
