@@ -40,14 +40,16 @@ Work in pairs as you did last week.
 
 - [ ] What is the core functionality of curl?
 - [ ] How can curl be used to query APIs?
+- [ ] Can you recommend or create a curl tutorial for the rest of the group?
 - [ ] What is the core functionality of Apigee?
-- [ ] How might we use Apigee on the course
+- [ ] How might we use Apigee on the course?
+- [ ] Can you recommend or create an Apigee tutorial for the rest of the group?
 
 ## Postman
 
 - [ ] What is the core functionality of Postman?
 - [ ] How can Postman help save the API user time?
-- [ ] Which Postman tutorials would you recommend?
+- [ ] Which Postman tutorials would you recommend for the rest of the group? If none please create one!
 
 
 ## Group 4 Development
