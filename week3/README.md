@@ -1,4 +1,4 @@
-# Week 2: Learning outcomes
+# Week 3: Learning outcomes
 
 Open this page [in GitHub](https://github.com/FAC6/book/blob/master/patterns/week1/README.md).
 
