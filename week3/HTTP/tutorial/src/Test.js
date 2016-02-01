@@ -18,7 +18,8 @@
 // 4. Make xhr run using the .open method. The server we are querying is the open
 // weather map database. We want to *GET* the current weather in London, using the
 // URL:  http://api.openweathermap.org/data/2.5/weather?q=London&APPID=8003fbadd5c2e05f9b0170036fc26185
-// It should be *asynchronous*!
+// This will return a JSON string of various info about the weather in London.
+// NOTE: The request should be *ASYNCHRONOUS*!! Otherwise the last test will fail.
 
 
 
@@ -28,5 +29,6 @@
 
 // 6. For the final test to pass, make a new variable called result, and assign
 // it to response.weather[0].description
-// This is the description for the weather in London. Console.log result, and
-// go to the test window to see the result of your HTTP request!
+// This will extract the description for the weather in London.
+// Console.log result, and go to the test window to see the result of your HTTP
+// appear in the console.
