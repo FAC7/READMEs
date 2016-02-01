@@ -79,3 +79,5 @@ This a similar technique, but instead of relying on embedding the key in the HTM
 * [Securing API Keys in a Client Side JavaScript App](http://billpatrianakos.me/blog/2013/09/12/securing-api-keys-in-a-client-side-javascript-app/)
 * [Same Origin Policy](https://en.wikipedia.org/wiki/Same-origin_policy)
 * [StackOverFlow Keeping API keys secret in client side JavaScript](http://stackoverflow.com/questions/7847121/how-to-keep-api-keys-secret-when-using-client-side-javascript)
+* [OAuth Wikipedia](https://en.wikipedia.org/wiki/OAuth)
+* [An Introduction to OAuth (in plain English)](http://blog.varonis.com/introduction-to-oauth/)
