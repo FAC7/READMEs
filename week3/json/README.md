@@ -1,8 +1,100 @@
-<!-- >>> Jack and Francesco -->
+# JSON
+
+## WHAT IS JSON
+JSON (**J**ava**S**cript **O**bject **N**otation) is universally accessible format, which uses **human-readable** text to transmit data objects of **attribute-value** pairs.
+
+## WHY?
+It is the **most widely used** asynchronous browser-server data-exchange format, largely replacing XML due to:
+ * **Readability** / accessability(see example below);
+ * **Speedy** translation of server response (in key-value pairs);
+ * Improved page loading time (JSON has **asynchronous loading** capability);
+ * **Data manipulation** (functions and loops can be used on JSON objects).
+ * Some **social media** APIs (e.g. **Twitter**, Flickr, etc.) **only** work effectively with **JSON**
+
+## HOW IS JSON USED BY APIs?
+ * Client-side API **requests data** from servers.
+ * Servers-side API **responds with a string** JSON-formatted strings**.
+ * Client **converts response string into JSON** via the [```JSON.parse()``` function](json-api-ex.md) (speedy translation of the data the API requested).
+ * Data can be **easily accessed as key-value pairs**.
+
+ ```javascript
+ var response = '{"name": "Francesco Moro", "street" : "Palmers road"}',
+     // JSON format is an object in a string
+     obj      = JSON.parse(response);
+     // parses the string into an object
+ ```
+ ```javascript
+     // will return
+     {
+         "name": "Francesco Moro",
+         "street" : "Palmers road"
+     }
+ ```
+ ```javascript
+     obj.street             // will return
+     "Palmers road"
+ ```
 
 
-<!-- >>> Elias and Ellie -->
+( Adding ``` ```json ``` and ``` ```xml ``` will produce their respective markdowns)
 
+#### This is  JSON:
+``` json
+{
+  "version": "1.0",
+  "encoding": "UTF-8",
+  "feed": {
+    "xmlns": "http://www.w3.org/2005/Atom",
+    "xmlns$openSearch": "http://a9.com/-/spec/opensearchrss/1.0/",
+    "xmlns$gd": "http://schemas.google.com/g/2005",
+    "xmlns$gCal": "http://schemas.google.com/gCal/2005",
+    "id": {"$t": "..."},
+    "updated": {"$t": "2006-11-12T21:25:30.000Z"},
+    "title": {
+      "type": "text",
+      "$t": "Google Developer Events"
+    },
+    "subtitle": {
+      "type": "text",
+      "$t": "The calendar contains information about upcoming developer
+       conferences at which Google will be speaking, along with other
+       developer-related events."
+    }
+}
+}
+```
+
+#### And this is the equivalent in XML:
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+    xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/"
+    xmlns:gd="http://schemas.google.com/g/2005"
+    xmlns:gCal="http://schemas.google.com/gCal/2005">
+  <id>...</id>
+  <updated>2006-11-12T21:25:30.000Z</updated>
+  <title type="text">Google Developer Events</title>
+  <subtitle type="text">The calendar contains information about upcoming
+    developer conferences at which Google will be speaking, along with
+    other developer-related events.</subtitle>
+```
+
+
+![readability](../assets/readability.jpg)
+
+Which one is more readable?
+
+## DIFFERENCES BETWEEN REGULAR OBJECTS AND JSON
+In JSON:
+ * The following Data types are not supported:
+    * Function
+    * undefined
+    * regular Expressions(REGEX)
+    * Date
+    * Error
+ * Inheritance / Prototype Behaviour
+ * Keys are strings
 
 ### JSON Javascript Methods
 There are only two methods in the JSON module of Javascript:

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON EXAMPLE</title>
+        <link rel="stylesheet" href="syle.css" media="screen">
+    </head>
+    <body>
+        <p></p>
+        <script>
+            var text = '{"name": "Francesco Moro", "street" : "Palmers road"}',
+                obj  = JSON.parse(text);
+            document.querySelector("p").innerHTML =
+            "Name: "+obj.name + "<br>"+"Address: "+obj.street+"<br>";
+        </script>
+    </body>
+</html>

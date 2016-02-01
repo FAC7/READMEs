@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JSON EXAMPLE</title>
+    </head>
+    <body>
+        <p></p>
+        <script>
+            var request   = new XMLHttpRequest(),
+                url       = "http://mapit.mysociety.org/postcode/E20SY";
+                todisplay = "not working... ",
+                obj       = {};
+
+            request.onreadystatechange = function() {
+                if (request.readyState == 4 && request.status == 200) {
+                    var response        = JSON.parse(request.responseText);
+                        obj.lat         = response.wgs84_lat;
+                        obj.long        = response.wgs84_lon;
+                        obj.country     = response.areas[34752].country_name;
+                        obj.postcode    = response.postcode;
+                }
+            }
+
+            request.open("GET",url,false);
+            request.send();
+
+            document.querySelector("p").innerHTML =
+                "We are currently in: "+obj.country+".<br>"+"Coordinates are  "+obj.postcode+" "+obj.lat+":"+obj.long;
+
+        </script>
+    </body>
+</html>
