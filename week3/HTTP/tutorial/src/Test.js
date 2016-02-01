@@ -19,7 +19,7 @@
 // weather map database. We want to *GET* the current weather in London, using the
 // URL:  http://api.openweathermap.org/data/2.5/weather?q=London&APPID=8003fbadd5c2e05f9b0170036fc26185
 // This will return a JSON string of various info about the weather in London.
-// NOTE: The request should be *asynchronous*!
+// NOTE: The request should be *ASYNCHRONOUS*!! Otherwise the last test will fail.
 
 
 
