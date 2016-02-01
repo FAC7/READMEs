@@ -1,6 +1,6 @@
 # Request and Response Objects
 
-Request or response objects form a part of a HTTP request or response, it contains the information to be transferred. The object can come in a few different formats, the main ones being XML and JSON.
+Request or response objects can form a part of a HTTP request or response, it contains the information to be transferred.
 
 
 ## Example of a Request Object
