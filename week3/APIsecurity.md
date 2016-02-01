@@ -23,7 +23,7 @@ In a nutshell:
 
 ```js
 
-var apiKey = 'superTopSecretApiKey'; //variable containing the key stays outside the function's scope
+var apiKey = 'superTopSecretApiKey';
 
 function getApiKey (username, password) {
     if (username === Tom_Upton && password === 12345678) {
