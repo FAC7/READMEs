@@ -12,12 +12,14 @@ In a nutshell:
 
 # How would you conceal an API key?
 ## What's the issue?
-* The JS code's visible to anyone who wants to see it client-side.
-* Chrome's Dev-Tools will reveal any key in the script.
-* Clients can make unlimited requests of any kind.
+
+* Your code needs the API key to make a request.
+* But if your key is visible in your code someone could nick it!
+* They could then do bad things with it :scream:
+* If your key is stored in client side JavaScript, a malicious hacker could just open up the dev tools and inspect your code :disappointed:
 
 ## How can we hide the key? (back end)
-* Imagine a piece of code looking something like this:
+* A very basic example could be a piece of code on the server that looks like this:
 
 ```js
 
@@ -28,17 +30,19 @@ function getApiKey (username, password) {
         sendRequest();
         return getApiResults();
     } else {
-        return 'accesDeniedHandsOffOurKey!';
+        return 'Access denied, hands off our key!';
     }
 }
 
 ```
+* The API key could be a private variable
+* The server processes the request and then sends the results back to the client
+* The client would never see the key (unless the server was hacked)
 
-* The function's inner if/else would be hidden from the client:
-```js
+<!-- ```js
 aReallyNiceObject.getApiKey(username, password);
 ```
-* The client must provide the correct username and password for total access.
+* The client must provide the correct username and password for total access. -->
 
 ## Front end concealment?
 * Basically it's very difficult! You kind of need a server to keep anything private. Here are a couple of methods that could be used:
