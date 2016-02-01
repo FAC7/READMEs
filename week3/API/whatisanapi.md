@@ -73,6 +73,8 @@ The following list contains more examples of popular APIs:
 
 [Types of API](http://www.slideshare.net/sarahmaddox/api-types)
 
+[API 101 (Also has tutorials)](https://developer.ibm.com/apimanagement/docs/api-101/)
+
 [APIs for dummies](http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WSM14025USEN&appname=skmwww)
 
 ## Recommended videos
