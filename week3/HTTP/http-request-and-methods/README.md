@@ -10,6 +10,9 @@ and the server sends back a response (e.g. 'Here's the file').
 
 ### Parts of an HTTP Request
 
+The parts of an HTTP request are what is sent from the client to the server
+each time an HTTP request is sent.
+
 1. *The Request Method (see below)*: Tells the server the type of action a client
 wants to perform.
 1. *URI (Uniform Resource Indicator)*: Specifies the address of the required
