@@ -4,6 +4,8 @@ Apigee is a cloud service with an API for you to store data and add new features
 
 I will be addressing the console which I have found to be a great reference point for API request urls and API methods,
 
+It is also good for testing if your api request is working and what json object is being sent back
+
 but I found it difficult to use. I guaged a feeling that apigee has a lot of potential,
 
 and it is mainly for using API's with your apps you have set up and storing information in the apigee cloud.
@@ -46,3 +48,9 @@ https://api.github.com/users/JMurphyWeb
 
 Example get methods for facebook:
 https://graph.facebook.com/sam.houston.1000 - couldn't get it working
+
+## Resources
+
+http://docs.apigee.com/
+
+https://apigee.com/resources/github
