@@ -93,4 +93,3 @@ It will open up in the [browser](examples/ex2.html) like this.
     * [format JSON in readable format](http://jsbeautifier.org/)
     * [read JSON online](http://jsonviewer.stack.hu/)
 
-<
