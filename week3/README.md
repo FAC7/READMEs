@@ -17,9 +17,9 @@ Work in pairs as you did last week.
 
 ## API Security
 
-- [ ] What is an API key?
-- [ ] How would you conceal an API key? (Front-end and Back-end)
-- [ ] What are the different types of API authentication?
+- [x] What is an API key?
+- [x] How would you conceal an API key? (Front-end and Back-end)
+- [x] What are the different types of API authentication?
 
 
 ## Group 2 HTTP

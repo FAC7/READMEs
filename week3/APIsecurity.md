@@ -58,11 +58,24 @@ This a similar technique, but instead of relying on embedding the key in the HTM
 
 * The server is a bit like a bouncer at a club. If you didn't get a (cookie) stamp then you ain't coming in!!
 
+# What are the different types of API authentication?
+
+* ### Passwords are out!
+* ### OAuth is in!
+
+# Three main types of API authentication:
+
+1. Username and password
+2. OAuth access token
+3. Two-factor authentication
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenIDvs.Pseudo-AuthenticationusingOAuth.svg/512px-OpenIDvs.Pseudo-AuthenticationusingOAuth.svg.png)
+
 
 # References
-* [Wikipedia](https://en.wikipedia.org/wiki/Application_programming_interface_key)
-* [StackOverFlow](http://stackoverflow.com/questions/1453073/what-is-an-api-key)
-* [ProgrammableWeb](http://www.programmableweb.com/)
+* [Wikipedia: API](https://en.wikipedia.org/wiki/Application_programming_interface_key)
+* [StackOverFlow: what is an API key?](http://stackoverflow.com/questions/1453073/what-is-an-api-key)
+* [ProgrammableWeb: A list of popular APIs](http://www.programmableweb.com/)
 * [Securing API Keys in a Client Side JavaScript App](http://billpatrianakos.me/blog/2013/09/12/securing-api-keys-in-a-client-side-javascript-app/)
 * [Same Origin Policy](https://en.wikipedia.org/wiki/Same-origin_policy)
-* []
+* [StackOverFlow Keeping API keys secret in client side JavaScript](http://stackoverflow.com/questions/7847121/how-to-keep-api-keys-secret-when-using-client-side-javascript)
