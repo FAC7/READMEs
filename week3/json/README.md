@@ -69,12 +69,12 @@ var jsonString = JSON.stringify(foo, replacer);
 ```
 
 ### JSONP
-Browsers enforce something called the *same origin policy* which prevents javascript accessing data from domains other than the one it is loaded from.
+Browsers enforce something called the [same origin policy](https://en.wikipedia.org/wiki/Same-origin_policy) which prevents javascript accessing data from domains other than the one it is loaded from.
 
 Often, however, you do need to access resources from other domains. This can be done by configuring Cross-Origin-Resource-Sharing (or CORS), which you should [read about](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), but also using something called JSONP (or JSON with padding). This is described below.
 
-The 
-
 
 ### Links and Resources
-TBD
+* [MDN page for JSON module](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/JSON) is useful. Read it.
+* [JSONP Wiki Page](https://en.wikipedia.org/wiki/JSONP): Pay special attention to the security issues at the bottom.
+* [JSONP Stackoverflow](http://stackoverflow.com/questions/2067472/what-is-jsonp-all-about): Simpler description of JSONP
