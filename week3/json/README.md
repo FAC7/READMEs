@@ -12,6 +12,7 @@ It is the **most widely used** asynchronous browser-server data-exchange format,
  * Some **social media** APIs (e.g. **Twitter**, Flickr, etc.) **only** work effectively with **JSON**
 
 ## HOW IS JSON USED BY APIs?
+Also see this [tutorial](json-api-ex.md) for a practical example.
  * Client-side API **requests data** from servers.
  * Servers-side API **responds with a string** JSON-formatted strings**.
  * Client **converts response string into JSON** via the [```JSON.parse()``` function](json-api-ex.md) (speedy translation of the data the API requested).
