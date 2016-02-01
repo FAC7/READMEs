@@ -1,16 +1,16 @@
 # What is an API?
 
-API is Application Programming Interface. An API is a set of commands, functions, and protocols which programmers can use when building software for a specific operating system. The API allows programmers to use predefined functions to interact with the operating system, instead of writing them from scratch.
+`API` is an Application Programming Interface. An `API` is a set of commands, functions, and protocols which programmers can use when building software for a specific operating system. The `API` allows programmers to use predefined functions to interact with the operating system, instead of writing them from scratch.
 
 In other words, allows one piece of software talk to another.
 
 ![API](http://restful-api-design.readthedocs.org/en/latest/_images/scope.png)
 
-There is lots of different types of API  for operating systems, applications or websites.
+There are lots of different types of `API`  for operating systems, applications or websites.
 
 ## What is a [REST API](http://www.restapitutorial.com/lessons/whatisrest.html#)?
 
-REST is a REpresentational State Transfer. It is the software architectural style of the world wide web. REST’s constraints can lead to higher performance and a more maintainable software architecture.
+`REST` is a REpresentational State Transfer. It is the software architectural style of the world wide web. `REST’s` constraints can lead to higher performance and a more maintainable software architecture.
 The six constraints that ```REST``` follow are:
 
 * Uniform Interface
@@ -24,14 +24,14 @@ When a system conforms to the constraints of ```REST``` they can be called ```RE
 The architectural style of ```REST``` was defined by Roy Thomas Fielding in his 2000 PhD dissertation.
 
 ## Are all APIs RESTful?
-The short answer is no. Most common APIs are currently based on REST but it is not the only type. There are also:
+The short answer is no. Most common `APIs` are currently based on `REST` but it is not the only type. There are also:
 
 
-* JSON-RPC: is a remote procedure call protocol encoded in JSON.
+* `JSON-RPC`: is a remote procedure call protocol encoded in JSON.
 
-* XML-RPC:  is a remote procedure call (RPC) protocol which uses XML to encode its calls and HTTP as a transport mechanism.
+* `XML-RPC`:  is a remote procedure call (RPC) protocol which uses XML to encode its calls and HTTP as a transport mechanism.
 
-* SOAP: is a protocol specification for exchanging structured information in the implementation of web services in computer networks.
+* `SOAP`: is a protocol specification for exchanging structured information in the implementation of web services in computer networks.
 
 ## How to make and API request for Facebook?
 
@@ -72,6 +72,8 @@ The following list contains more examples of popular APIs:
 ## Further reading
 
 [Types of API](http://www.slideshare.net/sarahmaddox/api-types)
+
+[API 101 (Also has tutorials)](https://developer.ibm.com/apimanagement/docs/api-101/)
 
 [APIs for dummies](http://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WSM14025USEN&appname=skmwww)
 
