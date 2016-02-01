@@ -4,9 +4,6 @@
 <!-- >>> Elias and Ellie -->
 
 
-### Structuring JSON
-TBD
-
 ### JSON Javascript Methods
 There are only two methods in the JSON module of Javascript:
 
@@ -69,9 +66,42 @@ var jsonString = JSON.stringify(foo, replacer);
 ```
 
 ### JSONP
+#### Problem
 Browsers enforce something called the [same origin policy](https://en.wikipedia.org/wiki/Same-origin_policy) which prevents javascript accessing data from domains other than the one it is loaded from.
 
 Often, however, you do need to access resources from other domains. This can be done by configuring Cross-Origin-Resource-Sharing (or CORS), which you should [read about](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), but also using something called JSONP (or JSON with padding). This is described below.
+
+#### Solution
+
+There is one item that bypasses this limitation: the `<script>` tags. When the script tags are used the domain limitation is ignored. Under normal circumstances, one cannot do anything with the results and the script is evaluated.
+
+This is where JSONP is useful. When you make your request to the server which has JSONP enabled, you can pass a parameter which tells the server about your page.
+
+```
+http://www.example.net/sample.aspx?callback=mycallback
+```
+
+The server then wraps its response in a call to the function that you pass it.    
+
+```javascript
+typeof mycallback === 'function' && mycallback({... some data ...})
+```
+
+Without JSONP, the returned JSON object would be parsed by the browser, but remain unassigned and therefore unusable. By including the callback, you can manipulate the data from the server response.
+
+##### Example
+```html
+<body>
+    <script type="text/javascript">
+        var container;
+        function mycallback(o) {
+            container = o;
+            console.log(container);
+        }
+    </script>
+    <script type="text/javascript" src="http://mapit.mysociety.org/postcode/SW1A1AA?callback=mycallback"></script>
+</body>
+```
 
 
 ### Links and Resources
