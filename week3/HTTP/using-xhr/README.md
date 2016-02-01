@@ -27,8 +27,7 @@ Read through the code to get an impression of the structure and what's going on.
 3. `if(myRequest.readyState == 4 && myRequest.status == 200){...}` --- every time the `readyState` property changes, the function will check if these two functions are met:
  1. `myRequest.readyState == 4` --- the `readyState` property changes from 0 to 4 as the request is processed. 0 means the request is not initialised, while 4 means the request is finished and the response is ready. However, the response might be that the request hasn't found what it was meant to, which is why we also need:
  2. `myRequest.status = 200` --- this property is only valid after the send method returns successfully. It will return a 3-digit status code starting with 1, 2, 3, 4, or 5, indicating what the result of your request was. The code `200` means 'OK', while `404` is notoriously the code for 'Not found'. [Full list here, under 'Return Values'.](https://msdn.microsoft.com/en-us/library/ms767625)
-4. `document.getElementById("demo").innerHTML =
-myRequest.responseText;` --- this is the code that will run if the request is successful. You can replace it with whatever you want to happen. In this case it writes the responseText received from the request to an HTML element.
+4. `document.getElementById("demo").innerHTML = myRequest.responseText;` --- this is the code that will run if the request is successful. You can replace it with whatever you want to happen. In this case it writes the responseText received from the request to an HTML element.
 5. `myRequest.open("GET", "xmlhttp_info.txt", true);` --- the [open method](https://msdn.microsoft.com/en-us/library/ms757849) is important. Here it takes 3 parameters:
  1. *bstrMethod*: What you want to do (in this case, "GET" something).
  2. *bstrUrl*: The requested URL (in this case "xmlhttp_info.txt", i.e. a file path) - in many cases this will be the URL of the server you are querying.
