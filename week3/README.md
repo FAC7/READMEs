@@ -60,6 +60,7 @@ Work in pairs as you did last week.
 - [ ] What is the best practice for manipulating JSON objects effectively?
 - [ ] What are the JSON Javascript method and when are they useful?
 - [ ] How and why are JSON objects used by APIs?
+- [ ] CORS (Cross-Origin HTTP Request)
 
 ## Development basics
 - [ ] Basics of mobile-first design/progressive enhancement, including why this is important?
