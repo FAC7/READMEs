@@ -29,7 +29,7 @@ resource.
 | ------ | ----------- |
 | GET | Retrieves information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.|
 | HEAD    | Same as GET, but transfers the status line and header section only (no body). |
-| pOST    | Sends data to the server, for example, customer information, file upload, etc. using HTML forms. |
+| POST    | Sends data to the server, for example, customer information, file upload, etc. using HTML forms. |
 | PUT     | Similar to put, but replaces existing content at the specified URI, or creates a new resource is none exists. |
 | DELETE  | Removes the resource at the target URI. |
 | CONNECT | Establishes a tunnel to the server identified by a given URI. Often used when there are firewalls or secure connections |
