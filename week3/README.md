@@ -65,7 +65,7 @@ Work in pairs as you did last week.
 - [ ] Basics of mobile-first design/progressive enhancement, including why this is important?
 - [ ] What is accessibility as pertains to web development and why is it important?
 - [ ] What is a linter and why is it useful? Please recommend an Atom linter.
-- [ ] Pre-commit Hook. What is it, why do you need it and how do you set it up? https://github.com/docdis/learn-pre-commit
+
 
 
 
