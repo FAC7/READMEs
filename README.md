@@ -16,7 +16,7 @@ FAC7, please add your READMEs here from now on.
 + [ ] Add a *References* section and link to any other material that you found useful;
 + [ ] Add a nice illustrative diagram or screenshot;
 + [ ] Add your README to the relevant week and give it a sensible name *
-+ [ ] **Bonus**: If you don't find any tutorials that you like, create your own screencast.
++ [ ] **Bonus**: If you don't find any tutorials that you like, create your own (screencasts particularly welcome).
 
 (* Sensible names are all lower-case, do not have spaces or non-ASCII characters and end with the .md file extension)
 
