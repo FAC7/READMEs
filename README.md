@@ -24,5 +24,6 @@ And keep your explanations short and simple.
 
 ## README of the week 
 
++ Week 3: [How do you use XHR to query APIs?](https://github.com/FAC7/READMEs/tree/master/week3/HTTP/using-xhr)
 + Week 3: [What is *Postman*?](https://github.com/FAC7/READMEs/blob/master/week3/Tools/postman.md) 
 + Week 4: *coming soon*
