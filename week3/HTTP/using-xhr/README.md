@@ -34,6 +34,9 @@ Read through the code to get an impression of the structure and what's going on.
  3. *varAsync* (optional): whether the call should be asynchronous or not. False means it waits for a response from the server. The default value is true, which allows you to execute other scripts while waiting for the response. This is generally preferable.
 6. `myRequest.send();` --- this method sends the request to the server. Use this after setting up the XHR with the .open() method. If you are GETting, it takes no parameter, but if you are POSTing, it may take a parameter of the string you wish to post.
 
+# Tutorial
+The tutorial to go with this README can be found [here](https://github.com/FAC7/READMEs/tree/master/week3/HTTP/tutorial?). Make sure you have the latest version of the repo, then open SpecRunner.html (where the Jasmine tests run) and src/Test.js (instructions for the tutorial). Happy coding!
+
 # Further Info
 * Old IE browsers don't have the XMLHttpRequest object. You can get around this by using the following format when creating your XHR:
 ```javascript
