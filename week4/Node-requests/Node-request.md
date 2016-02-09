@@ -29,12 +29,17 @@ The request-line consists of 3 things:
 
 | Method  | Description  |
 |---|---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+|GET|The GET method is used to retrieve information from the given server using a given URI. Requests using GET should only retrieve data and should have no other effect on the data.|
+|HEAD|Same as GET, but transfers the status line and header section only.|
+|POST|A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.|
+|PUT|Replaces all current representations of the target resource with the uploaded content.|
+|DELETE|Removes all current representations of the target resource given by a URI.|
+|CONNECT|Establishes a tunnel to the server identified by a given URI.|
+|OPTIONS|Describes the communication options for the target resource.|
+|TRACE|Performs a message loop-back test along the path to the target resource.|
+
 
 ## References
 
-* http://www.tutorialspoint.com/http/http_requests.htm
-* https://docs.nodejitsu.com/articles/HTTP/clients/how-to-create-a-HTTP-request
+* [HTTP Request](http://www.tutorialspoint.com/http/http_requests.htm)
+* [How to create a HTTP request](https://docs.nodejitsu.com/articles/HTTP/clients/how-to-create-a-HTTP-request)
