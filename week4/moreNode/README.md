@@ -21,12 +21,15 @@ This method allows you to write data into a file. Here is how it is used:
 ## Example:
 ```javascript
 var fs = require("fs");
+// You want to write the object {value: 7} into a new file called 'input.txt'. However, if you try and write the object directly, it will be displayed as
+// '[object, Object]' in the new file. You must stringify it first.
+var data = JSON.stringify({value:7});
 //            filename      data              callback to check if there is an error
-fs.writeFile('input.txt', 'changestofile!',  function(err) {
+fs.writeFile('input.txt', data,  function(err) {
    if (err) {
        return console.error(err);
    }
-});
+});    
 ```
 
 ## Method: `fs.readFile`
@@ -46,7 +49,7 @@ fs.readFile('stringfile.json', "utf8", function(err, data) {
     return console.error(err);
   }
   else {
-    fileData = JSON.parse(data);// remember that encoding with "utf8" returns the data as a string. Therefore we need to parse it to make it a JavaScript object. 
+    fileData = JSON.parse(data);// remember that encoding with "utf8" returns the data as a string. Therefore we need to parse it to make it a JavaScript object.
   }
 });
 ```
