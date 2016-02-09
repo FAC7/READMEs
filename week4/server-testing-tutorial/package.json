@@ -1,0 +1,21 @@
+{
+  "name": "server-testing-tutorial",
+  "version": "1.0.0",
+  "description": "Server-side testing with tape",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape ./test/*"
+  },
+  "keywords": [
+    "tutorial"
+  ],
+  "author": "katbow",
+  "license": "ISC",
+  "dependencies": {
+    "env2": "^2.0.4"
+  },
+  "devDependencies": {
+    "shot": "^3.0.0",
+    "tape": "^4.4.0"
+  }
+}
