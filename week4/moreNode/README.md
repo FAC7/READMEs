@@ -38,8 +38,8 @@ fs.writeFile('input.txt', data,  function(err) {
 This method allows you to read data from a file. It is in the form:
 `fs.readFile(filename[, options], callback)`
 * **filename** = the name of the file you want to read from.
-* **[, options]** = the same as fs.writeFile. See above. Note that if no encodin is specified, the raw buffer is returned. If options is a string, then it specifies the encoding. Example fs.readFile('etc/passwd', 'utf8', callback)
-* **callback** - The callback function whcih takes two parameters (err, data). Data is the contents of the file and err is throw hack when there is a error.  
+* **[, options]** = the same as fs.writeFile. See above. Note that if no encoding is specified, the raw buffer is returned. If the options parameter is a string, then it specifies the encoding. Example `fs.readFile('etc/passwd', 'utf8', callback)`
+* **callback** - The callback function which takes two parameters (err, data). Data is the contents of the file and err is used to alert the user if there is an error.
 
 ```javascript
 var fs = require("fs");
@@ -51,7 +51,9 @@ fs.readFile('stringfile.json', "utf8", function(err, data) {
     return console.error(err);
   }
   else {
-    fileData = JSON.parse(data);// remember that encoding with "utf8" returns the data as a string. Therefore we need to parse it to make it a JavaScript object.
+    fileData = JSON.parse(data);
+    // remember that encoding with "utf8" returns the data as a string. 
+    // Therefore we need to parse it to make it a JavaScript object.
   }
 });
 ```
