@@ -18,7 +18,7 @@ This method allows you to write data into a file. Here is how it is used:
 * **callback** = the callback function, taking a single parameter err - used to return an error in case of a writing error.
 
 
-## Example:
+### Example:
 ```javascript
 var fs = require("fs");
 // You want to write the object {value: 7} into a new file called 'input.txt'. However, 
@@ -41,6 +41,7 @@ This method allows you to read data from a file. It is in the form:
 * **[, options]** = the same as `fs.writeFile`. See above. Note that if no encoding is specified, the raw buffer is returned. If the options parameter is a string, then it specifies the encoding. Example `fs.readFile('etc/passwd', 'utf8', callback)`
 * **callback** - The callback function which takes two parameters (err, data). Data is the contents of the file and err is used to alert the user if there is an error.
 
+### Example:
 ```javascript
 var fs = require("fs");
 // read file and store data as variable
