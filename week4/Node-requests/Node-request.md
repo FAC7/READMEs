@@ -38,6 +38,14 @@ The request-line consists of 3 things:
 |OPTIONS|Describes the communication options for the target resource.|
 |TRACE|Performs a message loop-back test along the path to the target resource.|
 
+## The response
+
+There are 5 categories for response from the server:
+1. __Informational__ - the request has been received and the process is continuing
+2. __Success__ - the request was successfully received, understood and accepted
+3. __Redirection__  - further action must be taken in order to complete the request
+4. __Client Error__ - the request contains incorrect syntax or cannot be fulfilled
+5. __Server Error__ - the server failed to fulfill an apparently valid request
 
 ## References
 
