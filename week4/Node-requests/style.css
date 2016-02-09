@@ -46,14 +46,19 @@ h1, h2 {
   padding:24px;
   text-align: center;
 }
-h3 {text-align: center;}
 button {
   margin-left: auto;
 margin-right: auto;
 display: block;
 cursor: pointer;
+background-color: aquamarine;
+padding: 10px 20px;
+border: none;
+color: black;
+font-weight: bold;
+font-size: 20px;
 }
 
-a {
-      text-decoration: initial;
-}
+a { text-decoration: initial; }
+.result { text-align: center; }
+em, .result, h1 {color: aquamarine;}
