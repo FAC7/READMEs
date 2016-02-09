@@ -38,7 +38,7 @@ fs.writeFile('input.txt', data,  function(err) {
 This method allows you to read data from a file. It is in the form:
 `fs.readFile(filename[, options], callback)`
 * **filename** = the name of the file you want to read from.
-* **[, options]** = the same as fs.writeFile. See above. Note that if no encoding is specified, the raw buffer is returned. If the options parameter is a string, then it specifies the encoding. Example `fs.readFile('etc/passwd', 'utf8', callback)`
+* **[, options]** = the same as `fs.writeFile`. See above. Note that if no encoding is specified, the raw buffer is returned. If the options parameter is a string, then it specifies the encoding. Example `fs.readFile('etc/passwd', 'utf8', callback)`
 * **callback** - The callback function which takes two parameters (err, data). Data is the contents of the file and err is used to alert the user if there is an error.
 
 ```javascript
@@ -58,4 +58,11 @@ fs.readFile('stringfile.json', "utf8", function(err, data) {
 });
 ```
 ## Tutorial
-Work on Tutorial.js. The task is to read the people.json file and extract the data into Tutorial. Make an array of the last Names in alphabetical order and write this to a new file called lastNames.json. This data will contain the last names of the people in order of there age. Oldest coming first.  
+Open tutorial.js, which contains instructions. You will have to use `fs.readFile` to read the people.json file and extract the data in it - make sure you parse it into a real javascript object. Make an array of all the last Names in alphabetical order. Turn this back into a string using `JSON.stringify`, and use `fs.writeFile` to write this to a new JSON file: nameFile.json.
+
+You can check how you are doing at every stage of the tutorial by using `console.log()` to log your objects or arrays, and `typeof` to make sure they are what they are meant to be.
+
+## References
+* [Sitepoint on fs.read and fs.watch](http://www.sitepoint.com/accessing-the-file-system-in-node-js/)
+* [Tutorialspoint on asynchronous writing & reading](http://www.tutorialspoint.com/nodejs/nodejs_file_system.htm)
+* [Node.js documentation on fs (file system)](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
