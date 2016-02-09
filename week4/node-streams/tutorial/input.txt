@@ -1,1 +1,1 @@
-here is some input text!
+Hello this is the ReadStream
