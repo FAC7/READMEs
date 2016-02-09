@@ -39,7 +39,7 @@ test (simple):
    })
 ```
 
-### 4 Open index file in browser
+### 4 Open html file in browser
 ----------------
 ----------------
 
@@ -65,10 +65,11 @@ test('Check the halfIt function with 20 random test', function(assert){
 
 
 [Useful Guide](http://www.sitepoint.com/getting-started-qunit/)
+[Qunit documentation](http://qunitjs.com/)
 
 ----------------
 -----
-## What is asynchronus programming?
+## What is asynchronous programming?
 In programming, we can simplify the definition of synchronous code as “a bunch of statements in sequence”; so each statement in your code is executed one after the other. This means each statement has to wait for the previous one to finish executing.
 
 ```javascript
@@ -100,7 +101,7 @@ I call you on the telephone and WAIT for you to pickup. While you say something 
 I write you a letter and send it. In the meantime I don't wait around for you to receive it, I get on and do other things. You will receive the letter but might not read it immediately, when you do read it I will still be away completely free to do other things. Eventually I will receive a reply, then I will pause what I'm doing and respond based on what your letter says. Meanwhile you are not sat around waiting for my reply, you're off doing your own thing.
 
 ### How to test asynchronous code?
-Every non-trivial project that is written in JavaScript contains asynchronous functions. They are used to perform a given action after a certain amount of time, to retrieve data from a server, or event to send data to a server. QUnit provides a method, called ```QUnit.asyncTest()```, whose purpose is to test asynchronous code.
+Every non-trivial project that is written in JavaScript contains asynchronous functions. They are used to perform a given action after a certain amount of time, to retrieve data from a server, or even to send data to a server. QUnit provides a method, called ```QUnit.asyncTest()```, whose purpose is to test asynchronous code.
 
 The signature of the method is:
 ```QUnit.asyncTest(name, testFunction)```

@@ -11,15 +11,15 @@ Work in pairs as you did last week.
 
 ## APIs
 
-- [ ] What is an API?
-- [ ] What is a REST API? Are all APIs RESTfull?
-- [ ] Find some examples of different types of APIs
+- [x] What is an API?
+- [x] What is a REST API? Are all APIs RESTfull?
+- [x] Find some examples of different types of APIs
 
 ## API Security
 
-- [ ] What is an API key?
-- [ ] How would you conceal an API key? (Front-end and Back-end)
-- [ ] What are the different types of API authentication?
+- [x] What is an API key?
+- [x] How would you conceal an API key? (Front-end and Back-end)
+- [x] What are the different types of API authentication?
 
 
 ## Group 2 HTTP
