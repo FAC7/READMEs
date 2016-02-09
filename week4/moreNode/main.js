@@ -9,6 +9,17 @@ fs.readFile('people.json', "utf8", function(err, data) {
     fileData = JSON.parse(data);
   }
 });
+// say you want to put {value: 7}. The data will be turned into a string into a new file
+// '[object, Object]' if you do not stringify it first.
+var data = JSON.stringify({value:7});
+console.log(typeof data);
+
+
+fs.writeFile('input.txt', data,  function(err) {
+   if (err) {
+       return console.error(err);
+   }
+});
 
 // take data and store it in another file as a Json object
 
