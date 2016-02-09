@@ -12,18 +12,20 @@ The fs module is part of Node.js, and can be imported with: `var fs = require("f
 ## Method: `fs.writeFile`
 This method allows you to write data into a file. Here is how it is used:
 `fs.writeFile(filename, data[, options], callback);`
-* filename = the name of the file you want to write into.
-* data = the content that you want to write.
-* [, options] = optional parameter - an object where you can customise other options. [More here](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
-* callback = the callback function, taking a single parameter err - used to return an error in case of a writing error.
+* **filename** = the name of the file you want to write into.
+* **data** = the content that you want to write.
+* **[, options]** = optional parameter - an object where you can customise other options. [More here](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback)
+* **callback** = the callback function, taking a single parameter err - used to return an error in case of a writing error.
 
 
 ## Example:
 ```javascript
 var fs = require("fs");
-// You want to write the object {value: 7} into a new file called 'input.txt'. However, if you try and write the object directly, it will be displayed as
+// You want to write the object {value: 7} into a new file called 'input.txt'. However, 
+// if you try and write the object directly, it will be displayed as
 // '[object, Object]' in the new file. You must stringify it first.
-var data = JSON.stringify({value:7});
+var myObject = {value: 7};
+var data = JSON.stringify(myObject);
 //            filename      data              callback to check if there is an error
 fs.writeFile('input.txt', data,  function(err) {
    if (err) {
@@ -35,9 +37,9 @@ fs.writeFile('input.txt', data,  function(err) {
 ## Method: `fs.readFile`
 This method allows you to read data from a file. It is in the form:
 `fs.readFile(filename[, options], callback)`
-* filename = the name of the file you want to read from.
-* [, options] = the same as fs.writeFile. See above. Note that if no encodin is specified, the raw buffer is returned. If options is a string, then it specifies the encoding. Example fs.readFile('etc/passwd', 'utf8', callback)
-* callback - The callback function whcih takes two parameters (err, data). Data is the contents of the file and err is throw hack when there is a error.  
+* **filename** = the name of the file you want to read from.
+* **[, options]** = the same as fs.writeFile. See above. Note that if no encodin is specified, the raw buffer is returned. If options is a string, then it specifies the encoding. Example fs.readFile('etc/passwd', 'utf8', callback)
+* **callback** - The callback function whcih takes two parameters (err, data). Data is the contents of the file and err is throw hack when there is a error.  
 
 ```javascript
 var fs = require("fs");
