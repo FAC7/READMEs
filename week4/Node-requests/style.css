@@ -1,0 +1,59 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:400,700);
+
+body {
+  background-color: rgba(255, 153, 237, 0.38);
+  font-family: 'Exo', sans-serif;
+  background: #000 url(http://assets.codepen.io/assets/global/texture-codepen-2.png);
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.FontBulge:hover {
+  -webkit-animation: FontBulge 1s;
+  -moz-animation: FontBulge 1s;
+}
+@-webkit-keyframes FontBulge {
+  0% {
+    font-size: 30px;
+  }
+  20% {
+    font-size: 42px;
+    letter-spacing: 1px;
+  }
+  55% {
+    font-size: 36px;
+    letter-spacing: -1px;
+    }
+  80% {
+    font-size: 33px;
+    letter-spacing: 1px;
+  }
+  100% {
+    font-size: 30px;
+  }
+}
+
+h1, h2 {
+  font-size:30px;
+  margin:30px;
+  padding:24px;
+  text-align: center;
+}
+h3 {text-align: center;}
+button {
+  margin-left: auto;
+margin-right: auto;
+display: block;
+cursor: pointer;
+}
+
+a {
+      text-decoration: initial;
+}
