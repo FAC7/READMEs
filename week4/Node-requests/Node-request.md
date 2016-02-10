@@ -80,6 +80,15 @@ Connection: Closed
 </body>
 </html>```
 
+# Tutorial
+
+1. clone this repository
+2. in your terminal, go to the "Node-requests" directory
+3. run "$ node simple-server.js"
+4. in your browser, go to "localhost:8080"
+5. Read through and then start building yours with the files in the folder Build your server
+
+
 ## References
 
 * [HTTP Request](http://www.tutorialspoint.com/http/http_requests.htm)
