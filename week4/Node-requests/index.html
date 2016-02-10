@@ -15,22 +15,50 @@
       You won't need to install any additional modules; we'll be using built in modules for this tutorial.
     </p>
     <hr>
-    <h3><em>Modules you'll need</em></h3>
+
+    <h3><em>Complete the following variables in your server.js file:</em></h3>
+
       <p>
-        Declare the following variables:<br>
         <ol>
-          <li>an http variable with a call to require the html module.</li>
-          <li>a port variable. Set this to process.env.PORT || 8080</li>
-          <li>an fs variable. fs is a built in file system on node. It will allow you to make requests from your browser for files such as stylesheets</li>
-        </ol>
+          <li>var http = ...<br>set this to require the http module. Like this: require('http')</li>
+
+              <em>You need the http module so that you can access some useful methods.</em>
+
+          <li>var port = ...<br>Set this to 'process.env.PORT || 8080'. <br>Let's break this down:
+          var port = process.env.PORT means set 'port' to whichever value is stored in the environment variable PORT. (you can see for yourself if you type echo $PORT in your terminal.)<br>
+        You might find that $PORT is empty. That's why we use the ||. The value on the right hand side of the '||' is used if $PORT is empty.</li>
+          <em>You need to set the port so that the server knows which channel to listen to.</em>
+          <li><em>var fs = ...</em></li>
       </p>
     <hr>
-    <h3><em>Create your handler function</em></h3>
+    <h3><em>Handler function</em></h3>
     <p>
-      Your handler function will be the callback function
+      Your handler function will be called everytime your browser makes a request to the server. It takes two paramters: request and response. Both are objects.
+    </p>
+    <p>
+      The response object includes a key-value pair for the url. The url is set as '/' by default. We check for this in our handler function. When the browser is opened to localhost:8080/ (or localhost:8080) a request is made for our html index.file. A similar check is made for the css file.
+    </p>
+
+    <p>
+      At line 18 we make a request for to the server if part of the url contains '/new_request'. Complete the gaps in the if statement.
     </p>
 
     <hr>
+    <h3><em>http createServer() method</em></h3>
+    <p>
+      This method takes a callback function which is executed everytime a new request is made. Our callback function is the handler function above.<br>
+    </p>
+    <p>
+      Complete the code on line 26.
+    </p>
+    <hr>
+      <h3><em>Run your server</em></h3>
+      <p>
+        cd to the folder you've been working in and enter the following command in your terminal:
+      </p>
+      <p>
+        node server.js
+      </p>
     <hr>
     <h3 class='result'><em>Final result : Click on the button to make a GET request. (I know you can do it)</h3>
     <a href='/new_request'><button>CLICK</button></a>
