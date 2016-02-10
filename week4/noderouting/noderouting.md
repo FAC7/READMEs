@@ -6,11 +6,7 @@ A router is a separate .js file that selects the most appropriate handler functi
 
 Look at the diagram below to understand the router's role. Instead of loading a separate file each time the user requests new content, the router can modify the root URL, which calls the handler function responsible for the requested content.
 
-![](noderouting/routingimages/routingexample.png)
-
-
-
-
+![](routingimages/example.png)
 
 
 ### Follow these simple steps to create your own router...
