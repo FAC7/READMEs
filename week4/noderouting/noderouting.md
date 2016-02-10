@@ -48,7 +48,7 @@ function router(/*which parameters do you need?*/) {
 
 * Don't forget to include your module exporter!
 
-* Create a separate ```server.js``` file. This will require Node.js' core ```http``` module ([check out the documentation for more info](../).
+* Create a separate ```server.js``` file. This will require Node.js' core ```http``` module (check out the FAC [README](https://github.com/FAC7/READMEs/blob/master/week4/node-core/http-module.md) or the [nodejs documentation](https://nodejs.org/api/http.html) for more info).
 
 ```javascript
 var http = // require the http module
