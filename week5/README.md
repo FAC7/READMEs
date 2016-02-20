@@ -21,7 +21,7 @@ There has been a bit of confusion about how teams should organise their code so 
 * [ ] Can you recommend some best practices for how your folder's tree structure should look?
 * [ ] What are the best practices for the naming of files?
 
-## Redis best Practices and the Cloud
+## Redis connections and best practice
 
 #### Connections
 
@@ -34,7 +34,8 @@ There has been a bit of confusion about how teams should organise their code so 
 
 * [ ] What is persistence and why is this important for databases?
 * [ ] What are the different ways of achieving persistence with Redis? Which should you use?
-* [ ] Why might you need to Optimize Redis?
+* [ ] Why might you need to optimize Redis?
+* [ ] Provide some examples of Redis optimization?
 
 
 ## Websockets & script injections
