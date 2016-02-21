@@ -26,7 +26,7 @@ There has been a bit of confusion about how teams should organise their code so 
 #### Connections
 
 * [ ] How can Redis be deployed to Heroku? Recommend a method.
-* [ ] What is Redis Pub/Sub and when is it useful? (scaling applications)
+* [ ] What is Redis Pub/Sub and when is it useful? How can it help to scale applications?
 * [ ] What are Redis connections and why can they be troublesome?
 * [ ] Why is dwyl's redis-connection the best thing since sliced bread?
 
