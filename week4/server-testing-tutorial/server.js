@@ -8,7 +8,16 @@ function handler(request, response) {
 
     if (url.length === 1) {
         response.writeHead(200, {"Content-type" : "text/html"});
-        var path = __dirname;
+        fs.readFile(__dirname + '/index.html', function (error, index) {
+            response.write(index);
+            response.end();
+        });
+    } else if (url.indexOf('/cat') > -1) {
+        response.writeHead(200, {"Content-type" : "text/html"});
+        response.write('<h1>CAT PAGE</h1>');
+        response.end();
+    } else {
+        response.writeHead(200, {"Content-type" : "text/html"});
         fs.readFile(__dirname + '/index.html', function (error, index) {
             response.write(index);
             response.end();
