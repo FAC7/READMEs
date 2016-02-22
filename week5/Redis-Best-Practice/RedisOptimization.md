@@ -88,11 +88,7 @@ To reset this simply run ```CONFIG RESETSTAT```, and you've got a brand new slat
 ## Resources
 
 + [Redis Memory Optimization](https://github.com/sripathikrishnan/redis-rdb-tools/wiki/Redis-Memory-Optimization)
-
 + [Redis Documentation](http://redis.io/topics/memory-optimization)
-
 + [Understanding the Top 5 Redis Performance Metrics](http://www.datadoghq.com/wp-content/uploads/2015/06/Top-5-Redis-Performance-Metrics-Guide-Ebook.pdf)
-
 + [redis-js](https://www.npmjs.com/package/redis-js)
-
 + [10 quick tips about redis](http://objectrocket.com/blog/how-to/10-quick-tips-about-redis/)
