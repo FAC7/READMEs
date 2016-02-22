@@ -8,7 +8,12 @@ However, fear not: Redis offers two ways to ensure that data is regularly made '
 
 ### 1. RDB Snapshotting
 This produces 'point-in-time snapshots' of the dataset when certain conditions are met. These conditions can be set by the user. E.g. the user can tell Redis to take a snapshot either if the last snapshot was more than 2 minutes ago, or if there are at least 100 new writes.
-This is good because it provides an easy way to backup the whole database. You can archive these snapshots and revert to them at any point in the future. However, in event of a failure you will still lost SOME data, even if it is only a few minutes' worth. So, ideally you should also use the second persistence option offered by Redis:
+You can alter how often Redis does this by changing your `redis.conf` file through the Redis CLI like so:
+```
+CONFIG SET SAVE "900 1 300 10".
+```
+This command tells Redis to save a snapshot every 900 seconds if there is at least 1 change, or every 300 seconds if there are at least 10 changes. By default, RBD will save the dataset in a dump.rdb file in the root, from which you can restore the database if there is a failure.
+RBD is good because it provides an easy way to backup the whole database. You can archive these snapshots and revert to them at any point in the future. However, in event of a failure you will still lost SOME data, even if it is only a few minutes' worth. So, ideally you should also use the second persistence option offered by Redis:
 
 ### AOF (Append only file)
 This is Redis' main persistence option. It works by logging every write operation that modifies the database into an 'append-only file' (AOF). Then, if there is a failure, Redis restarts and replays the operations in the AOF, which reconstructs the database to where it was before the failure. To turn this option on, change your config file by writing `CONFIG SET appendonly yes` (see tutorial below).
@@ -38,4 +43,5 @@ There are three sub-options available under AOF, which the user can choose accor
 ### References
 * [Redis Persistence Demystified (very thorough & long)](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
 * [Redis Persistence Documentation (official)](http://redis.io/topics/persistence)
+* [Redis CONFIG SET Documentation (official)](http://redis.io/commands/config-set)
 * [Amazon list of Redis parameters (including appendonly and appendfsync)](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/ParameterGroups.Redis.html)
