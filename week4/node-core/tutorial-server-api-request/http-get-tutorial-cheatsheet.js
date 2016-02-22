@@ -28,7 +28,7 @@ function handler(clientRequest, clientResponse){
             clientResponse.end(dataRecieved);
           });
 
-      };
+      }
 
         http.get(options, callback);
     }
