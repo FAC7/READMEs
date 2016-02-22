@@ -24,11 +24,12 @@ There are three sub-options available under AOF, which the user can choose accor
 2. Make a `redis.conf` file in the root of your project. Leave it empty for now.
 3. Start your database again, this time passing the path of your new config file as an argument, e.g. `redis-server ./redis.conf`.
 4. Open `redis-cli` again, and run the following commands: 
-```
-CONFIG SET appendonly yes
-CONFIG REWRITE
-```
-The first command changes the configuration of your Redis server to enable AOF. The second command saves this configuration to your redis.conf file, so that when you close and open the database, the setting will be remembered.
+  
+  <pre>
+    CONFIG SET appendonly yes   // changes the configuration of your Redis server to enable AOF
+    CONFIG REWRITE              // saves this configuration to your redis.conf file, 
+    // so that when you close and open the database, the setting will be remembered
+  </pre>
 
 5. Your server is now saving all 'write' operations to the redis.conf file every second. You can test this by saving an item to your database, closing the database and the cli, and restarting again with the path to the redis.conf file passed in. Try to retrieve the item you just saved - this should be successful this time.
 6. (Optional) - Change the *appendfsync* setting in the same way as above (`CONFIG SET` and then `CONFIG REWRITE` to remember the setting). Use the three arguments described above.
@@ -37,3 +38,4 @@ The first command changes the configuration of your Redis server to enable AOF. 
 ### References
 * [Redis Persistence Demystified (very thorough & long)](http://oldblog.antirez.com/post/redis-persistence-demystified.html)
 * [Redis Persistence Documentation (official)](http://redis.io/topics/persistence)
+* [Amazon list of Redis parameters (including appendonly and appendfsync)](http://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/ParameterGroups.Redis.html)
