@@ -2,7 +2,7 @@ var redis = require('redis');
 var client = redis.createClient();
 
 function addToDb(score, name) {
-    //add information to add the score and name to the sorted set 'drag race'
+    // add information to add the score and name to the sorted set 'drag race'
 }
 
 function getData(callback) {
@@ -10,6 +10,6 @@ function getData(callback) {
 }
 
 module.exports = {
-    getData: getData,
-    displayData: displayData
+    addToDb: addToDb,
+    getData: getData
 };
