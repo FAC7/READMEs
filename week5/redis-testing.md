@@ -19,10 +19,6 @@
 * Ending your client connection after each request is important.
 * Connections to redis are finite, so forgetting to end the connection could end up wasting your reserves!
 
-## Error-handling
-*
-
-## Example Test Case
 
 ## Tutorial part 1
 In this part you'll be expected to write a function to make the example test case pass.
@@ -33,61 +29,61 @@ In this part you'll be expected to write a function to make the example test cas
 
 2. Create a tape tests object specifying the `setup` and `teardown` functions (you'll need to check the documentation - tweet me if you're unsure how to do this).
 
-```javascript
-var client;
+    ```javascript
+    var client;
 
-var tests.module1 = tape({
-    setup: function(t) {
-        //create a client and select the designated test database number
-        //remember to end your tape test
-    },
-    teardown: function(t) {
-        //flush your database
-        //end your client connection (think about why this is important)
-        //remember to end your tape test
-    }
-})
-```
+    var tests.module1 = tape({
+        setup: function(t) {
+            //create a client and select the designated test database number
+            //remember to end your tape test
+        },
+        teardown: function(t) {
+            //flush your database
+            //end your client connection (think about why this is important)
+            //remember to end your tape test
+        }
+    })
+    ```
 3. This case creates an assertion that tests a function that adds an array to a database.
 
-```javascript
-tests.module1('tests a function that adds an array to a database', function(t) {
-    var array = ['1', '2', '3', '4', '5'];
-    var listName = 'new list';
-    listWriter(client, listName, array);
-    client.lrange(listName, 0, -1, function(error, reply){
-        t.deepEqual(reply, array, "array should be ['1', '2', '3', '4', '5']")
+    ```javascript
+    tests.module1('tests a function that adds an array to a database', function(t) {
+        var array = ['1', '2', '3', '4', '5'];
+        var listName = 'new list';
+        listWriter(client, listName, array);
+        client.lrange(listName, 0, -1, function(error, reply){
+            t.deepEqual(reply, array, "array should be ['1', '2', '3', '4', '5']")
+        });
     });
-});
-```
+    ```
 
 4. Create the function `listWriter()` that passes the test above.
 
 ## Tutorial part 2
 Here, you're expected to write a test case asserting that an error has been thrown by Redis.
 
-1. First you'll need to complete this almost identical setup/teardown function.
+1. First you'll need to complete this almost identical setup/teardown function. We're using the `lpush` method here to create a list object upon which `hget` will be called in order to provoke an error.
 
-```javascript
-var tests.module2 = tape({
-    setup: function(t) {
-        // code from tests.module1 goes here
-        client.lpush('giraffe', 0);
-        // and here
-    },
-    teardown: function(t) {
-        // code from tests.module1 goes here
-    }
-});
-```
-2. The function `errorMaker()` returns an error:
+    ```javascript
+    var tests.module2 = tape({
+        setup: function(t) {
+            // code from tests.module1 goes here
+            client.lpush('giraffe', 0);
+            // and here
+        },
+        teardown: function(t) {
+            // code from tests.module1 goes here
+        }
+    });
+    ```
+2. The function `errorMaker()` throws an error:
 
-```javascript
-function errorMaker(client, callback) {
-    client.hget('giraffe', 7, callback);
-};
-```
-3. Write a test case that includes a callback able to assert that redis has thrown an error.
+    ```javascript
+    function errorMaker(client, callback) {
+        client.hget('giraffe', 7, callback);
+    };
+    ```
+3. Write a test case that includes a callback able to assert that redis has thrown an error. Note: you'll need to call `errorMaker()` in your test and make it take your callback as a parameter.
 
 
 
