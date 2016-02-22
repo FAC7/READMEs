@@ -44,7 +44,7 @@ field not exposed in the default functions of the original design.
 
 --- Very nice site!
 
-However a malicious person may know of a code injection vulnerability in the guestbook, and enters a message such as
+However a malicious person may know of a code injection vulnerability in the guestbook, and enters a message such as (the ## are in place of < as READme files will also ignore script tags!)
 
 Nice site,  I think I'll take it.
 
@@ -52,3 +52,16 @@ Nice site,  I think I'll take it.
 
 If another user views the page then the injected code will be executed. This code can allow the attacker to impersonate another user. However this same software bug can be accidentally triggered by an unassuming user which will cause the website to display bad HTML code.
 
+
+# Preventing XSS
+
+
+
+
+## References
+
+* [XSS article](http://www.thegeekstuff.com/2012/02/xss-attack-examples/)
+* [video on cross scripting](https://www.youtube.com/watch?v=OVLz6RgOjIY)
+* [video on cross scripting](https://www.youtube.com/watch?v=V79Dp7i4LRM)
+* [Further articles on code injection](https://en.wikipedia.org/wiki/Code_injection)
+* [Article on prevention](https://www.owasp.org/index.php/XSS_\(Cross_Site_Scripting\)_Prevention_Cheat_Sheet#HTML_entity_encoding )
