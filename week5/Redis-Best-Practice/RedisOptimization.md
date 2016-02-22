@@ -5,7 +5,7 @@ Since Redis 2.2 many data types are optimized to use less space up to a certain 
 ![](http://imgs.xkcd.com/comics/is_it_worth_the_time.png)
 
 
-* #### Hashes
+#### Hashes
 Redis Hashes are maps between string fields and string values, so they are the perfect data type to represent objects
 
 (e.g. A User with a number of fields like name, surname, age, and so forth):
@@ -18,7 +18,7 @@ HSET user:1000 password 12345
 HGETALL user:1000
 ```
 
-* #### Lists
+#### Lists
 Redis Lists are simply lists of strings, sorted by insertion order. It is possible to add elements to a Redis List pushing new elements on the head (on the left) or on the tail (on the right) of the list.
 
 Some example of list operations and resulting lists:
@@ -28,11 +28,11 @@ LPUSH mylist b   # now the list is "b","a"
 RPUSH mylist c   # now the list is "b","a","c" (RPUSH was used this time)
 ```
 
-* #### Sets
+#### Sets
 Redis Sets are an unordered collection of Strings. It is possible to add, remove, and test for existence of members in O(1) (constant time regardless of the number of elements contained inside the Set).
 Redis Sets have the desirable property of not allowing repeated members. Adding the same element multiple times will result in a set having a single copy of this element. Practically speaking this means that adding a member does not require a check if exists then add operation.
 
-* #### Sorted Sets
+#### Sorted Sets
 Redis Sorted Sets are, similarly to Redis Sets, non repeating collections of Strings. The difference is that every member of a Sorted Set is associated with score, that is used in order to take the sorted set ordered, from the smallest to the greatest score. While members are unique, scores may be repeated.
 
 For more information click [here](http://redis.io/topics/data-types).
