@@ -92,6 +92,31 @@ Characters to escape:
 / --> &#x2F;
 ```
 
+Example checking for HTML and XML characters:
+
+```
+document.getElementById("search").addEventListener("keyup", function() {
+  input = document.getElementById('search').value;
+  var char = ["<",">","/","\"","\'","&"];
+  var okay = true;
+
+  // input = input.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  if (input.length >= 3) {
+    char.forEach(function(el){
+      if(input.indexOf(el) > -1){
+        okay=false;
+        alert("letters only");
+        return "error";
+
+      }
+    });
+    if(okay===true){
+      sendInputToBackEnd(input);
+    }
+}
+
+```
+
 + RULE 2 - Attribute Escape Before Inserting Untrusted Data into HTML Common Attributes
 
 ```
