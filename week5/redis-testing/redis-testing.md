@@ -90,3 +90,6 @@ Here, you're expected to write a test case asserting that an error has been thro
 ## References
 * [npm documentation on wrapping-tape](https://www.npmjs.com/package/wrapping-tape)
 * [dwyl redis-connection documentation](https://github.com/dwyl/redis-connection)
+
+## Cheatsheet
+If you get stuck, have a look at the cheatsheet in this directory.
