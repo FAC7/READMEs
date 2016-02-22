@@ -37,7 +37,7 @@ Redis Sorted Sets are, similarly to Redis Sets, non repeating collections of Str
 
 For more information click [here](http://redis.io/topics/data-types).
 
-## Some tips about Redis optimization?
+## Some tips about Redis optimization
 
 #### Use hashes
 You must be aware that every key in Redis comes with some additional metadata. So when you’ll store objects like ```“key=value”``` that doesn’t mean you will use 8 bytes per key.
@@ -50,7 +50,7 @@ Redis has to e.g. store some info for LRU algorithm.
 
 Thanks to ```hashes``` you can save some space.
 
-### Use short keys
+#### Use short keys
 Easy trick to implement but can also reduce amount of required memory.
 
 Think of it: if you’ve 100,000,000 keys named like
