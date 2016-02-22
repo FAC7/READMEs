@@ -28,6 +28,8 @@ Socket.IO can be used to make a chat app in just a few lines of code.
 * Document collaboration:
 Allow users to concurrently edit a document and see each other's changes.
 
+For more about setting socket.io see [here](socketio.md)
+
 ## Resources
 
 * Dwyl [tutorial](https://github.com/dwyl/hapi-socketio-redis-chat-example) that takes chat application from last week further by using Redis.
