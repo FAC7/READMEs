@@ -6,6 +6,27 @@ contestants, sorted by the episode in which they were eliminated!
 
 ### Instructions
 
+To set up the tutorial run npm install your terminal:
+
+```shell
+$ npm install
+```
+
+Make sure redis is installed on your computer ([have a look here](http://redis.io/download) for instructions)
+
+To start your redis database run this command in your terminal:
+
+```
+$ redis-server
+```
+
+To see a log of redis operations you can also run:
+
+```
+$ redis-cli
+```
+
+
 The files you will be changing are `redis.js`, `server.js`, and `script.js`.
 We've set you up with a basic server. Your job is to add redis functions to
 handle posting and getting data from the redis database.
