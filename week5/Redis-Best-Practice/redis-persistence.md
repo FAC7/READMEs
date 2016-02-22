@@ -12,10 +12,11 @@ You can alter how often Redis does this by changing your `redis.conf` file throu
 ```
 CONFIG SET SAVE "900 1 300 10".
 ```
-This command tells Redis to save a snapshot every 900 seconds if there is at least 1 change, or every 300 seconds if there are at least 10 changes. By default, RBD will save the dataset in a dump.rdb file in the root, from which you can restore the database if there is a failure.
+This command tells Redis to save a snapshot every 900 seconds if there is at least 1 change, or every 300 seconds if there are at least 10 changes. By default, RBD will save the dataset in a `dump.rdb` file in the root, from which you can restore the database if there is a failure.
+
 RBD is good because it provides an easy way to backup the whole database. You can archive these snapshots and revert to them at any point in the future. However, in event of a failure you will still lost SOME data, even if it is only a few minutes' worth. So, ideally you should also use the second persistence option offered by Redis:
 
-### AOF (Append only file)
+### 2. AOF (Append only file)
 This is Redis' main persistence option. It works by logging every write operation that modifies the database into an 'append-only file' (AOF). Then, if there is a failure, Redis restarts and replays the operations in the AOF, which reconstructs the database to where it was before the failure. To turn this option on, change your config file by writing `CONFIG SET appendonly yes` (see tutorial below).
 
 There are three sub-options available under AOF, which the user can choose according to their priorities in terms of durability and speed:
