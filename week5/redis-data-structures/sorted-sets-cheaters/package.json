@@ -1,0 +1,19 @@
+{
+  "name": "sorted-sets-tutorial",
+  "version": "1.0.0",
+  "description": "A drag race inspired tutorial on redis sorted sets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.9.0",
+    "tape": "^4.4.0"
+  },
+  "dependencies": {
+    "redis": "^2.4.2"
+  }
+}

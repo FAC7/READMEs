@@ -18,3 +18,10 @@ tape('check if server returns homepage', function(t) {
         t.end();
     });
 });
+
+tape('check if there is a cat page', function(t) {
+    Shot.inject(server.handler, {method: 'GET', url:'/cat'}, function(res) {
+        t.equal(res.rawPayload.toString(), '<h1>CAT PAGE</h1>', 'Success!');
+        t.end();
+    });
+});
