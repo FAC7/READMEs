@@ -55,6 +55,58 @@ If another user views the page then the injected code will be executed. This cod
 
 # Preventing XSS
 
+Here are some rules for XSS prevention. Usually rules 1 and 2 are enough.
++ RULE 0 - Never Insert Untrusted Data Except in Allowed Locations. Never put untrusted data in the following slots:
+
+```
+<script>...NEVER PUT UNTRUSTED DATA HERE...</script>   directly in a script
+
+<!--...NEVER PUT UNTRUSTED DATA HERE...-->             inside an HTML comment
+
+<div ...NEVER PUT UNTRUSTED DATA HERE...=test />       in an attribute name
+
+<NEVER PUT UNTRUSTED DATA HERE... href="/test" />   in a tag name
+
+<style>...NEVER PUT UNTRUSTED DATA HERE...</style>   directly in CSS
+
+```
+
++ RULE 1 - HTML Escape Before Inserting Untrusted Data into HTML Element Content
+
+```
+<body>...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...</body>
+
+<div>...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...</div>
+
+any other normal HTML elements
+
+```
+Characters to escape:
+
+```
+& --> &amp;
+< --> &lt;
+> --> &gt;
+" --> &quot;
+' --> &#x27;    
+/ --> &#x2F;
+```
+
++ RULE 2 - Attribute Escape Before Inserting Untrusted Data into HTML Common Attributes
+
+```
+<div attr=...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...>content</div>     inside UNquoted attribute
+
+<div attr='...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...'>content</div>   inside single quoted attribute
+
+<div attr="...ESCAPE UNTRUSTED DATA BEFORE PUTTING HERE...">content</div>   inside double quoted attribute
+
+```
+
++ RULE 3 - JavaScript Escape Before Inserting Untrusted Data into JavaScript Data Values
++ RULE 4 - CSS Escape And Strictly Validate Before Inserting Untrusted Data into HTML Style Property Values
++ RULE 5 - URL Escape Before Inserting Untrusted Data into HTML URL Parameter Values
+More on prevention rules [here](https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#HTML_entity_encoding)
 
 
 
@@ -64,4 +116,4 @@ If another user views the page then the injected code will be executed. This cod
 * [video on cross scripting](https://www.youtube.com/watch?v=OVLz6RgOjIY)
 * [video on cross scripting](https://www.youtube.com/watch?v=V79Dp7i4LRM)
 * [Further articles on code injection](https://en.wikipedia.org/wiki/Code_injection)
-* [Article on prevention](https://www.owasp.org/index.php/XSS_\(Cross_Site_Scripting\)_Prevention_Cheat_Sheet#HTML_entity_encoding )
+* [Article on prevention](https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#HTML_entity_encoding)
