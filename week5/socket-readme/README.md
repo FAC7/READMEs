@@ -12,7 +12,7 @@ WebSockets is better for situations that require low-latency communication. For 
 
 Socket.io enables real-time event-based communication.
 
-Why are they used?
+### Why are they used?
 
 Socket.io's capabilities consist of:
 
@@ -34,6 +34,6 @@ Allow users to concurrently edit a document and see each other's changes.
 
 * Great [stackoverflow](http://stackoverflow.com/questions/14703627/websockets-protocol-vs-http) discussion on WebSockets.
 
-* http://www.tutorialspoint.com/html5/html5_websocket.htm
+* Tutorialspoint [article](http://www.tutorialspoint.com/html5/html5_websocket.htm) on WebSockets.
 
-* http://socket.io/docs/
+* socket.io [docs](http://socket.io/docs/).
