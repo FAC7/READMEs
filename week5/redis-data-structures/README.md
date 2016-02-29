@@ -1,6 +1,7 @@
 # Redis Data Structures
 
-Redis is what is called a key-value store, often referred to as a NoSQL database: if we know a key, we can retrieve a given value that it refers to.
+Redis is what is called a key-value store, often referred to as a NoSQL database:
+if we know a key, we can retrieve a given value that it refers to.
 
 Redis supports a number of different data structures.
 
@@ -28,7 +29,8 @@ Some of the list commands:
 
 ### Sets
 
-A set is like a list but does not have an order and each element can only appear once.
+A set is like a list but does not have an order and each element can only appear
+once.
 
 Some of the set commands:
 
@@ -43,7 +45,8 @@ Some of the set commands:
 
 ### Sorted Sets
 
-A sorted set is similar to a regular set, but each value has an associated score. This score is used to sort the elements in the set.
+A sorted set is similar to a regular set, but each value has an associated score.
+ This score is used to sort the elements in the set.
 
 | Command | Description |
 | --- | --- |
@@ -53,7 +56,8 @@ A sorted set is similar to a regular set, but each value has an associated score
 
 ### Hashes
 
-They are maps between strings and string values. This makes hashes useful for representing objects.
+They are maps between strings and string values. This makes hashes useful for
+representing objects.
 Hashes can be set up as follows:
 
 `HSET user:1000 name “John Smith”`  
@@ -70,7 +74,8 @@ This sets a hash (user:1000) with these keys and values (name, password, and vis
 | `HDEL user:1000 password`| deletes `password` of `user:1000` |
 | `HINCRBY user:1000 visits 1` | increases the numerical value of `visits` by given number. If the field specified doesn’t exist, HINCRBY makes it the given number |
 
-A full list of [hash commands can be found here](http://redis.io/commands#hash). You can also filter by group to look at commands for other data types.
+A full list of [hash commands can be found here](http://redis.io/commands#hash).
+You can also filter by group to look at commands for other data types.
 
 ### References
 
