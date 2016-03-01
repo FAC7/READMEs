@@ -39,12 +39,7 @@ Remember to add the ```handlebars.js``` library in your ```index.html```file:
 <script src="handlebars-v2.0.0.js"></script>
 ```
 
-II. Create a main.js file and add the following:
-
-```javascript
-
-Now we add the following ```<script>``` at the bottom of the ```index.html``` file:
-
+II. Now we add the following ```<script>``` at the bottom of the ```index.html``` file:
 
 ```html
 <script id="person-template" type="text/x-handlebars-template">
@@ -57,7 +52,7 @@ The template is bounded by ```<script>```tag of type ```text/x-handlebars-templa
 
 We gave the script tag an arbritary id of ```person-template```because we will need to access its content later.
 
-Now we need add our own ```JavaScript``` which we can wrap in an ```onload``` event to ensure that our ```JavaScript``` runs only after everything is loaded:
+III. Now we need add our own ```JavaScript``` which we can wrap in an ```onload``` event to ensure that our ```JavaScript``` runs only after everything is loaded:
 
 ```javascript
 window.onload = function () {
@@ -65,42 +60,42 @@ window.onload = function () {
 }
 ```
 
-We access our handlebars template via the ```person-template``` id and get the ```innerHTML``` into the source JavaScript variable:
+IV. We access our handlebars template via the ```person-template``` id and get the ```innerHTML``` into the source JavaScript variable:
 
 ```javascript
     var source = document.getElementById("person-template").innerHTML;
 ```
 
-We call Handlebars to compile the source into a template:
+V. We call Handlebars to compile the source into a template:
 
 ```javascript
     var template = Handlebars.compile(source);
 ```
 
-We set some data in the context:
+VI. We set some data in the context:
 
 ```javascript
     var context = {firstname: "John", lastname: "Doe"};
 ```
 
-We pass the context to the template to get an output:
+VII. We pass the context to the template to get an output:
 ```javascript
     var output = template(context);
 ```
 
-Finally we place that output into our HTML:
+VIII. Finally we place that output into our HTML:
 
 ```HTML
     <div id="nameoutput"></div>
 ```
 
-and the following into our JavaScript file:
+and the following into our ```JavaScript``` ```<script>```tag:
 
 ```javascript
     document.getElementById("nameoutput").innerHTML = output;
 ```
 
-This is what you should see in your browser:
+IX. This is what you should see in your browser:
 
 ![](img/Handlebar_Tutorial.png)
 
