@@ -1,9 +1,29 @@
-<html>​
- <head>​
- </head>​
-   <body>​
-    The List of Shoes:
-    <ul class="shoesNav"></ul>
-    <script type="text/javascript" src="/main.js"></script>​
-   </body>​
-​</html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Handlebar Tutorial</title>
+    </head>
+    <body>
+        <h1>Let's say hello to:</h1>
+        <div id="nameoutput"></div>
+
+        <script id="person-template" type="text/x-handlebars-template">
+            <p class="person">{{firstmane}} {{lastname}}</p>
+        </script>
+
+        <script src="handlebars-v2.0.0.js"></script>
+
+        <script>
+        window.onload = function () {
+            var source = document.getElementById("person-template").innerHTML;
+            var template = Handlebars.compile(source);
+            var context = {firstname: "Super", lastname: "Hero"};
+            var output = template(context);
+            document.getElementById("nameoutput").innerHTML = output;
+        }
+        </script>
+
+    </body>
+
+</html>
