@@ -26,7 +26,7 @@ server.register(Inert, (err) => {
 		config: {
 			validate: {
 				payload: {
-					number: Joi.number()
+					"magic-number": Joi.number()
 				}
 			}
 		}
