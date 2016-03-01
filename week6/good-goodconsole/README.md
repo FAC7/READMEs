@@ -28,7 +28,7 @@ var goodOptions = {
 ```
 
 The `log: '*'` means good-console will output all log events. You can specify
-log types such as errors in the form of tags `log: [error]`. The reporter key
+log types such as errors in the form of tags `log: ['error']`. The reporter key
 tells good which reporter to use. The events key will tell good which events
 to pass to the good-console. You can use multiple reporters by adding another
 object in the reporters array. This must include the reporter and events keys
