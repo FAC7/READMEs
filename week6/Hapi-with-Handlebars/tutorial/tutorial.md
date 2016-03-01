@@ -75,7 +75,7 @@ window.onload = function () {
 **VI.** We set some data in the context:
 
 ```javascript
-    var context = {firstname: "John", lastname: "Doe"};
+    var context = {firstname: "Super", lastname: "Hero"};
 ```
 
 **VII.** We pass the context to the template to get an output:
