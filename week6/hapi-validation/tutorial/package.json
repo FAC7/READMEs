@@ -1,0 +1,23 @@
+{
+  "name": "hapi-validation-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "good": "^6.6.0",
+    "good-console": "^5.3.1",
+    "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^13.0.0",
+    "inert": "^3.2.0",
+    "joi": "^8.0.3",
+    "vision": "^4.0.1"
+  }
+}
