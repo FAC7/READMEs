@@ -9,10 +9,10 @@
 ![](img/screen2.png)
 
 
-+ Once you have the ```handlebars-v2.0.0.js``` file, all you have to do is to include the library in your ```html``` with a regular ``<script>`` tag.
++ Once you have the ```handlebars-v4.0.5.js``` file, all you have to do is to include the library in your ```html``` with a regular ``<script>`` tag.
 
 ```html
-<script src="handlebars-v2.0.0.js"></script>
+<script src="handlebars-v4.0.5.js"></script>
 ```
 
 
