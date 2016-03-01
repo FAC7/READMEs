@@ -9,10 +9,8 @@
         <div id="nameoutput"></div>
 
         <script id="person-template" type="text/x-handlebars-template">
-            <p class="person">{{firstmane}} {{lastname}}</p>
+            <p class="person">{{firstname}} {{lastname}}</p>
         </script>
-
-        <script src="handlebars-v2.0.0.js"></script>
 
         <script>
         window.onload = function () {
@@ -23,6 +21,8 @@
             document.getElementById("nameoutput").innerHTML = output;
         }
         </script>
+
+        <script src="handlebars-v4.0.5.js"></script>
 
     </body>
 
