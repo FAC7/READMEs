@@ -40,7 +40,9 @@ You must register the good plug-in as below.
 server.register({
     register: require('good'),
     options: goodOptions
-    })
+    }, function(error) {
+      // all your routes
+      })
 ```
 
 
