@@ -26,7 +26,7 @@ server.register(Inert, (err) => {
 		config: {
 			validate: {
 				payload: {
-					number: Joi.number().min(3).max(20).required(),
+					number: Joi.number()
 				}
 			}
 		}
