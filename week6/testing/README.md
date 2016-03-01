@@ -71,3 +71,9 @@ tape('Teardown', function(t){
   t.end();
 });
 ```
+
+
+### References
+* [Dwyl's great tutorial on using hapi (see section on Testing with Tape)](https://github.com/dwyl/learn-hapi)
+* [Testing Hapi Plugins](http://ideasintosoftware.com/unit-testing-hapi-plugins/)
+* [Testing Hapi Services (see section on Plugins)](https://medium.com/@sigkell/testing-hapi-services-with-lab-96ac463c490a#.rs2tqu2aw)
