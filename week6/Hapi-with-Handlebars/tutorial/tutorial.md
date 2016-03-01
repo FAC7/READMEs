@@ -100,6 +100,10 @@ and the following into our JavaScript file:
     document.getElementById("nameoutput").innerHTML = output;
 ```
 
+This is what you should see in your browser:
+
+![](img/Handlebar_Tutorial.png)
+
 To learn more about this tutorial click [here](http://learnwebtutorials.com/step-by-step-getting-started-tutorial-using-handlebars-js).
 
 
