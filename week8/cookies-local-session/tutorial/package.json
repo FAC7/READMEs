@@ -1,0 +1,14 @@
+{
+  "name": "cookie-hapi-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cheatsheet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^13.0.0"
+  }
+}
