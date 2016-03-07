@@ -20,6 +20,14 @@ May other hashing algorithms are designed to be fast (e.g MD5 Sha1) but Bcrypt i
 
 Hackers can have a list of common passwords and their Bcrypt strings, and match a stolen password hash to the dictionary (this is why it's important to have a mixture of uppercase, lowercase, numbers and other characters)
 
+### Salting
+
+One way to combat this is by salting the passwords:
+
+Salting adds random strings in between the hash string.
+
+The big benefit to this combined with Bcrypt is that it would take the hacker a very long time to generate a dictionary based on the salt because Bcrypt is so slow!
+
 ### How to use bcrypt and salt
 First and for most, install bcrypt.            
 ```shell
