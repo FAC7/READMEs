@@ -57,20 +57,19 @@ The salt+hash can also be auto-generated in a single line of code –
 var hash = bcrypt.hashSync("my password", 10);
 ```
 During authentication you need to check the incoming password string against the hash. This is what you’d do –
-```javascript
+
 // Load the password hash from DB
 // Let's assume it's stored in a variable called `hash`
 bcrypt.compareSync("my password", hash); // true
 bcrypt.compareSync("not my password", hash); // false
-``
+
 "my password" is the correct one (sent via login form or some other method by the user) hence compareSync returns true while in the second case, when the password is incorrect, it returns false.
 
-#### Async Usage
+### Async Usage
 
 The module also provides us with an async flavour that can be used like this –
 
-```javascript
-
+```js
 var bcrypt = require('bcrypt');
 bcrypt.genSalt(10, function(err, salt) {
     bcrypt.hash("my password", salt, function(err, hash) {
@@ -101,5 +100,6 @@ If you’re wondering what the 10 (that’s used for hashing) is, then that’s 
 
 ### Resources
 
-Video: [Bcrypt & Password Security](https://www.youtube.com/watch?v=O6cmuiTBZVs)        
-Article: [Using the node js bcrypt module to hash and safely store passwords](http://codetheory.in/using-the-node-js-bcrypt-module-to-hash-and-safely-store-passwords/)
++ Video: [Bcrypt & Password Security](https://www.youtube.com/watch?v=O6cmuiTBZVs)        
++ Article: [Using the node js bcrypt module to hash and safely store passwords](http://codetheory.in/using-the-node-js-bcrypt-module-to-hash-and-safely-store-passwords/)
++ Article: [How to safely store a password](https://codahale.com/how-to-safely-store-a-password/)
