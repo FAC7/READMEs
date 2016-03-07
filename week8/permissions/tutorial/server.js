@@ -3,6 +3,7 @@ var hAuthorize = require('hapi-authorization');
 var basic = require('hapi-auth-basic');
 var inert = require('inert');
 var Path = require('path'); // a module that creates file paths based on the current directory
+var Bcrypt = require('bcrypt');
 var server = new Hapi.Server();
 var port = 4000;
 
@@ -21,17 +22,21 @@ var users = {
     },
     upstairs: {
         username: 'upstairs',
-        password: '', // unencrypted: 'middlemanagement'
+        password: '$2a$04$773qHw2lDnmocyG.v32ueOybodh6jMERLVaSxRfIJMKjFcBWNK3Dq', // unencrypted: 'middlemanagement'
         role: 'upstairs'
     },
     fac7: {
         username: 'fac7',
-        password: '', // unencrypted: 'sapplings'
+        password: '$2a$04$m5Rvb0QzTGLs13hCOh8CIO0mo/l3jmR7MgNOHKNHZ2GCJrgoGPyDK', // unencrypted: 'sapplings'
         role: 'fac7'
     }
 };
-function validate(request, usename, password, callback) {
-
+function validate(request, username, password, callback) {
+    var user = users[username];
+    if (!user) { return callback (null, false); }
+    Bcrypt.compare(password, user.password, function(err, isValid) {
+        callback(err, isValid, { role: user.role, username: user.username });
+    });
 }
 
 server.register(plugins, function(err) {
