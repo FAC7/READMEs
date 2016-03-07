@@ -3,13 +3,13 @@
 
 Authentication
 
-- Different types of authentication (Basic, 2 factor etc.)
-- Cookies/Local/session storage (whats the difference?)
+- What are the different types of authentication (Basic, 2 factor etc.)
+- What are Cookies/Local/session storage (whats the difference?)
 - JWTs (what are they, how do you use them?)
-- bcrypt (storing passwords)
+- How do you use bcrypt? (storing passwords)
 
 Authorisation
 
-- setting permissions (who can see what, different levels of user - admin, unauth user, auth user)
-- setting scope in a request?
-- invalidating a session token
+- How do you set permissions on your app? (who can see what, different levels of user - admin, unauth user, auth user)
+- How do you set scope in a request? And how do add/receive a access token in a request?
+- How do you invalidate a session token
