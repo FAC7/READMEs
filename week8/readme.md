@@ -5,7 +5,7 @@ Authentication
 
 - Different types of authentication (Basic, 2 factor etc.)
 - Cookies/Local/session storage (whats the difference?)
-- JWTs (what are they, how do you use them?) dwyl tutorial
+- JWTs (what are they, how do you use them?)
 - bcrypt (storing passwords)
 
 Authorisation
