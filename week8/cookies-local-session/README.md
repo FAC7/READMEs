@@ -11,6 +11,42 @@ So if you come to the same web page a second, third time... x times the server o
 
 `Cookies` are very easy to mantain and very versatile.
 
+## Hot it works?
+This is the data you can find on the text files:
+ 
++ `name-value` pair containing the actual data
++ `expiry date` after which it is no longer valid
++ The `domain` and path of the server it should be sent to
+ 
+If you would like to learn more about `name-value`, `expiry date` and `domain`, click [here](http://www.quirksmode.org/js/cookies.html).
+ 
+The way you set these data also matter. The order should be:
+ 
+```
+key-value;expiration_date;path;domain;
+ 
+```
+ 
+The following example shows a `cookie` that is accessible in all the `paths` of the `domain`, and has just one `key-value` pair.
+ 
+```
+visits=3; path=/;
+
+```
+ 
+The following example shows a `cookie` that is accessible in all the `paths` of the `domain` (by default), and expires on March 07, 2016 at 11 a.m..
+ 
+ ```
+ last-visit=Mon, 01 Mar 2016 19:36:00 GMT; expires=Wed, 07 Mar 2016 11:00:00 GMT;
+ ```
+
+## document.cookie
+We use `document.cookie` property in `JavaScript` to create, read, and delete cookies. See the following example of how to create a cookie:
+
+ ```javascript
+ document.cookie="username=Mireia SThomas";
+ ```
+
 ## Quick guide to use cookies on hapi:
 
 ```javascript
