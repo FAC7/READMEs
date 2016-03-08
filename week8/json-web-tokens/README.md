@@ -47,11 +47,11 @@ The important bits are `var post = qs.parse(body)` and the two following lines. 
 function authSuccess(req, res) {
   var token = generateAndStoreToken(req);
   // Ignore the rest for now.
- <!--  res.writeHead(200, {
-    'content-type': 'text/html',
-    'authorization': token
-  });
-  return res.end(restricted); -->
+  //res.writeHead(200, {
+    //'content-type': 'text/html',
+    //'authorization': token
+  //});
+  //return res.end(restricted);
 }
 ```
 A lot goes on in this function. We're going to go into two levels of further functions called from this function and then come back to it later, so pay attention. Firstly, this function runs the generateAndStoreToken function, which returns a JWT token but does a lot besides:
@@ -62,16 +62,16 @@ function generateAndStoreToken(req, opts) {
   var GUID   = generateGUID();
   var token  = generateToken(req, GUID, opts);
   // Ignore the rest for now
-  <!-- var record = {
-    "valid" : true,
-    "created" : new Date().getTime()
-  };
+  //var record = {
+    //"valid" : true,
+    //"created" : new Date().getTime()
+  //};
 
-  db.put(GUID, JSON.stringify(record), function (err) {
+  //db.put(GUID, JSON.stringify(record), function (err) {
     // console.log("record saved ", record);
-  });
+  //});
 
-  return token; -->
+  //return token;
 }
 ```
 This generates a GUID - to generate the GUID (Globally Unique Identifier) we could use the module Crypto to make a long, random alphanumeric string. The key thing is that the GUID is unique for each user. Then a Token is generated using the generateToken function, which is where the jsonwebtoken module comes into play:
@@ -94,7 +94,7 @@ function generateToken(req, GUID, opts) {
 
  We use the jwt.sign method, which takes two parameters: **first**, an object with Claims within. The first claim (auth) is the GUID of the user, the second (exp) is an expiration value in seconds, the default expiry date is 7 days (as set on line 80). The **second** parameter is the secret which will be used to encode the JWT (and later to verify it). This is stored in your config.env (see above). The token is then returned to the generateAndStoreToken function from earlier:
 
- #### 6. generateAndStoreToken (part #2) (see step 4)
+#### 6. generateAndStoreToken (part #2) (see step 4)
 
  ```javascript
 function generateAndStoreToken(req, opts) {
@@ -114,7 +114,7 @@ function generateAndStoreToken(req, opts) {
 ```
 So we now have a token. Yay. The function now makes a `record` object with a 'valid' value of 'true' and a 'created' value of whenever it was created. This object is stored in the database for future reference and to verify tokens that are received. It then returns the token to the authSuccess function from earlier - the one that was doing all the work:
 
- #### 7. authSuccess (part #2) (see step 3)
+#### 7. authSuccess (part #2) (see step 3)
 ```javascript
 function authSuccess(req, res) {
   var token = generateAndStoreToken(req);
@@ -128,7 +128,7 @@ function authSuccess(req, res) {
 ```
 So now the token has been passed right back up. This function writes the function to the head of the response that was passed in, under the 'authorization' key. It then grants access to the 'restricted' page with `res.end(restricted)`.
 
-THIS CULMINATES THE AUTHENTICATION PART OF USING JWTs. Let's go through what has happened. 
+**THIS CULMINATES THE AUTHENTICATION PART OF USING JWTs**. Let's go through what has happened. 
 * The user has signed in with the correct username and password. 
 * A GUID was generated and stored in the database with a 'valid' value of 'true'
 * A JWT was generated containing this same GUID in its claims
@@ -150,25 +150,25 @@ function validate(req, res, callback) {
 
     //ignore the rest of the function for now
 
-<!--   } else {
+  //} else {
     // check if a key exists, else import word list:
-    db.get(decoded.auth, function (err, record) {
-      var r;
-      try {
-        r = JSON.parse(record);
-      } catch (e) {
-        r = { valid : false };
-      }
-      if (err || !r.valid) {
-        authFail(res);
-        return callback(res);
-      } else {
-        privado(res, token);
-        return callback(res);
-      }
-    });
-  }
-} -->
+    //db.get(decoded.auth, function (err, record) {
+      //var r;
+      //try {
+        //r = JSON.parse(record);
+      //} catch (e) {
+        //r = { valid : false };
+      //}
+      //if (err || !r.valid) {
+        //authFail(res);
+        //return callback(res);
+      //} else {
+        //privado(res, token);
+        //return callback(res);
+      /}
+    //});
+  //}
+}
 ```
 The function grabs the authorization property on the header (which should be the JWT that the client has been given earlier) and sets as the token variable, this is then decoded using the verify function:
 
