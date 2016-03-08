@@ -65,6 +65,20 @@ server.register(plugins, function(err) {
                 reply.file(fac7);
             }
         }
+    }, {
+        method: "GET",
+        path: "/upstairs",
+        handler: function (request, reply) {
+            var upstairs = Path.join(__dirname, './public/upstairs.html');
+            reply.file(upstairs);
+        }
+    }, {
+        method: "GET",
+        path: "/dan",
+        handler: function (request, reply) {
+            var dan = Path.join(__dirname, './public/dan.html');
+            reply.file(dan);
+        }
     }]);
 });
 
