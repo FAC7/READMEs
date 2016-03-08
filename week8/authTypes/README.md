@@ -37,7 +37,7 @@ When a user attempts to access a protected web resource, the container checks th
 
 ## Two Factor Authentication
 
-Two Factor authentication differs from the other types of authentication in that it is based on something the user knows (like a password) but also something that they have. Objects used for authentication include card readers, authentication USB keys, and even their own phone. We have all used two factor authentication, when we sign up to a service and they ask our phone number to send a verification code to. The video in the references gives a good intro to 2Auth, and there is also a site which lists all sites that support it.
+Two Factor authentication differs from the other types of authentication in that it is based on something the user knows (like a password) but also something that they have. Objects used for authentication include card readers, authentication USB keys, and even their own phone. We have all used two factor authentication, when we sign up to a service and they ask our phone number to send a verification code to. The video in the references gives a good intro to 2Auth, and there is also a page that lists all sites that support it.
 
 References:
 
