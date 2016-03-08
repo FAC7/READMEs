@@ -4,7 +4,7 @@
 // we can check for existing cookies and, reply with a 'Welcome back' message
 
 exports.register = function(server, options, next){
-    server.route([{
+    server.route({
         method: 'GET',
         path: '/',
         config: {
@@ -20,7 +20,7 @@ exports.register = function(server, options, next){
                     // reply('Welcome back ' + <<using the cookie and add the users first name here>>)
             }
         }
-    }]);
+    });
     return next();
 };
 
