@@ -11,8 +11,27 @@ So if you come to the same web page a second, third time... x times the server o
 
 `Cookies` are very easy to mantain and very versatile.
 
+## Quick guide to use cookies on hapi:
+
+```javascript
+
+//get:
+request.state[cookieName]
+
+// set:
+reply.state(cookieName,...)
+
+// del:
+reply.unstate(cookieName)
+
+```
+
 ## Hot to check Cookies, localStorage and sessionStorage in Chrome?
 Go to Developer tools or `alt - cmd - i` if you have a mac.
+
+Click on Resources tab and the at the left side you can access to this information.
+
+![cookie](https://cloud.githubusercontent.com/assets/2573931/13602052/0e619aac-e52c-11e5-99d1-412fa76141dc.png)
 
 
 
