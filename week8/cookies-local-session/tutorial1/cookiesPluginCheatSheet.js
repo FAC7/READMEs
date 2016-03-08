@@ -13,6 +13,7 @@ exports.register = function(server, options, next){
         path: '/',
         config: {
             handler: function(request, reply){
+                console.log(request);
                 if(!request.state['firstname']){
                     reply('First Visit').state('firstname','Jack');
                 } else {
