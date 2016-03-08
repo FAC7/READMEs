@@ -10,7 +10,7 @@ JWTs comprise of three distinct parts:
 * JSON Web Signature (JWS): The part of the JWT that makes it tamper-proof. It is signed with a secret which you can keep in your environment variables.
 
 ### How do I use it?
-There is a very comprehensive dwyl repo [here](https://github.com/dwyl/learn-json-web-tokens). If you're diving into the code, save yourself some confusion by reading [this issue](https://github.com/dwyl/learn-json-web-tokens/issues/46) first. Here is a step-by-step guide to the important bits:
+There is a very comprehensive dwyl repo [here](https://github.com/dwyl/learn-json-web-tokens). If you want to dive into the code yourself, save yourself some confusion by reading [this issue](https://github.com/dwyl/learn-json-web-tokens/issues/46) first. Otherwise, we have put together this step-by-step guide to the important bits of what's going on.
 
 
 #### 1. Requiring
@@ -18,7 +18,7 @@ There is a very comprehensive dwyl repo [here](https://github.com/dwyl/learn-jso
 var jwt = require('jsonwebtoken');
 var secret = process.env.JWT_SECRET
 ```
-These two lines are at the top of your handlers file. The first requires a module that can generate and verify JWTs. The second loads a JWT_SECRET from your config env file. This will be used to encode and verify JWTs - make sure you don't upload it. So. The next function is what the request will be sent to when the user inputs a username and password:
+These two lines are at the top of your handlers file. The first requires a module that can generate and verify JWTs. The second loads a JWT_SECRET from your config env file. This will be used to encode and verify JWTs - make sure you don't upload it. So. When the user inputs a username and password, the request and response from their POST request are passed to the following function
 
 #### 2. authHandler
 ```javascript
@@ -40,7 +40,7 @@ function authHandler(req, res){
   }
 }
 ```
-The important bits are `var post = qs.parse(body)` and the two following lines. The U/N and password the user has entered are grabbed from the POST request and compared to a username and password stored somewhere else (u.un and u.pw). If the credentials are correct, the authSuccess function is run with the same req/res:
+The important bits are `var post = qs.parse(body)` and the two lines that follow it. The username and password the user has entered are grabbed from the POST request and compared to a username and password stored somewhere else (u.un and u.pw) - in practice this would be in the database. If the credentials are correct, the authSuccess function is run with the same req/res:
 
 #### 3. authSuccess (part #1)
 ```javascript
@@ -54,7 +54,7 @@ function authSuccess(req, res) {
   //return res.end(restricted);
 }
 ```
-A lot goes on in this function. We're going to go into two levels of further functions called from this function and then come back to it later, so pay attention. Firstly, this function runs the generateAndStoreToken function, which returns a JWT token but does a lot besides:
+A lot goes on in this function. We're going to go into two levels of further functions called from this function and then come back to it later, so pay attention. Firstly, this function runs the generateAndStoreToken function:
 
 #### 4. generateAndStoreToken (part #1)
 ```javascript
@@ -74,7 +74,7 @@ function generateAndStoreToken(req, opts) {
   //return token;
 }
 ```
-This generates a GUID - to generate the GUID (Globally Unique Identifier) we could use the module Crypto to make a long, random alphanumeric string. The key thing is that the GUID is unique for each user. Then a Token is generated using the generateToken function, which is where the jsonwebtoken module comes into play:
+This generates a GUID (Globally Unique Identifier) - we could do this using the module Crypto to make a long, random alphanumeric string. The key thing is that the GUID is unique for each user. Then a Token is generated using the generateToken function, which is where the jsonwebtoken module comes into play:
 
 #### 5. generateToken
 
@@ -92,7 +92,7 @@ function generateToken(req, GUID, opts) {
 }
 ```
 
- We use the jwt.sign method, which takes two parameters: **first**, an object with Claims within. The first claim (auth) is the GUID of the user, the second (exp) is an expiration value in seconds, the default expiry date is 7 days (as set on line 80). The **second** parameter is the secret which will be used to encode the JWT (and later to verify it). This is stored in your config.env (see above). The token is then returned to the generateAndStoreToken function from earlier:
+ We use the jwt.sign method, which takes two parameters: **first**, an object containing claims - key/object pairs. The first claim (auth) is the GUID of the user, the second (exp) is an expiration value in seconds, the default expiry date is 7 days (as set on line 80). The **second** parameter is the secret which will be used to encode the JWT (and later to verify it). This is stored in your config.env (see above). The token is then returned to the generateAndStoreToken function from earlier:
 
 #### 6. generateAndStoreToken (part #2) (see step 4)
 
