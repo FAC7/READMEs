@@ -1,7 +1,7 @@
 ## JSON Web Tokens
 
 ### What is it?
-It is a way of encoding JSON objects. The server can verify the information stored in the JWT using the JWT's digital signature. This verification uses a 'secret signing key' to ensure that the JWT is what it claims it is. They are becoming more and more popular as they guard against several common types of attack.
+It is a way of encoding JSON objects to securely store sensitive information (e.g. usernames/passwords) on the client. The server can verify the information stored in the JWT using the JWT's digital signature. This verification uses a 'secret signing key' to ensure that the JWT is what it claims it is. They are becoming more and more popular as they guard against several common types of attack.
 
 ### But what actually ***IS*** it?
 JWTs comprise of three distinct parts:
