@@ -10,7 +10,7 @@ JWTs comprise of three distinct parts:
 * JSON Web Signature (JWS): The part of the JWT that makes it tamper-proof. It is signed with a secret which you can keep in your environment variables.
 
 ### How do I use it?
-There is a very comprehensive dwyl repo [here](https://github.com/dwyl/learn-json-web-tokens). If you want to dive into the code yourself, save yourself some confusion by reading [this issue](https://github.com/dwyl/learn-json-web-tokens/issues/46) first. Otherwise, we have put together this step-by-step guide to the important bits of what's going on.
+There is a very comprehensive dwyl repo [here](https://github.com/dwyl/learn-json-web-tokens). If you want to dive into the code yourself, save yourself some confusion by reading [this issue](https://github.com/dwyl/learn-json-web-tokens/issues/46) first. Otherwise, we have put together this step-by-step guide to the important bits of what's going on. It's very long - sorry. But you kind of need to follow the flow all the way through, and we thought it was better to give you the whole flow than to leave bits out and confuse you. If you have questions, ask Jack T. or Owen.
 
 
 #### 1. Requiring
