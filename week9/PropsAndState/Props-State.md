@@ -1,4 +1,4 @@
-## Basic understanding of state and props
+## Great understanding of state and props
 
 #### Props
 
@@ -54,3 +54,10 @@ render() {
     );
 }
 ```
+
+
+## References
+
+Video:       
+[Introduction to properties](https://egghead.io/lessons/react-introduction-to-properties)                 
+        [React state basics](https://egghead.io/lessons/react-state-basics)
