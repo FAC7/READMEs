@@ -10,12 +10,30 @@ As the first port of call for Tuesday, it's important you spend some time review
 - https://github.com/kohei-takata/learnyoureact
 
 When you're ready, the video topics with questions and potentially useful resources:
-
-### Component Lifecycle
+### Backend - Ellie, Jackum, Mireia, Owen
+- Serving the React Bundle
+- Making Requests to the server
+- (Webpack configurations), 
+- 
+### Component Lifecycle - Ivan, Katbow, Jacket
 - What are the different cycles?
+- Which ones triggered when? How used with animation
 - What are they used for?
 - Can you give some examples of different Lifecycle methods?
 
+### State and Props - Andrew, Francesco, Virginie? Rob?
+- Great understanding of state and props
+- State as functional components
+- When to use state/props
+- How to manage state (link to Redux? Other libraries? Relay? What's next?)
+
+### CSS - Sam, Tasnim, Elias
+- See how others have structured their CSS
+- Modules to help?
+- Inline styles?
+- Finding best practices for structuring this
+
+## (Rejected Topics)
 ### Testing
 - How to unit test a component?
 - How to run integration tests?
