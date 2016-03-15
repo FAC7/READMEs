@@ -23,7 +23,7 @@ When you're ready, the video topics with questions and potentially useful resour
 
 ### State and Props - Andrew, Francesco, Virginie? Rob?
 - Great understanding of state and props
-- State as functional components
+- Stateless functional components
 - When to use state/props
 - How to manage state (link to Redux? Other libraries? Relay? What's next?)
 
