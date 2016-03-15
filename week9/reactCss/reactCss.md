@@ -1,5 +1,15 @@
 # CSS with React
 
+## Intro
+Style can be broken down into 3 main concepts:
+* Layout: how an element or component looks *in relation to others*.
+* Appearance: the *characteristics* of an element or component.
+* Behaviour / State: how an element looks *in a given state*.
+
+## When to use inline styling?
+* When styling elements involved in state and behaviour.
+
+
 ## References
 * [Stack OverFlow best practices with CSS in react](http://stackoverflow.com/questions/26882177/react-js-inline-style-best-practices)
 * [react docs on inline styling](https://facebook.github.io/react/tips/inline-styles.html)
