@@ -15,7 +15,7 @@ When you're ready, the video topics with questions and potentially useful resour
 - Making Requests to the server
 - Webpack configurations
 
-### Component Lifecycle - Ivan, Katbow, Jacket
+### Component Lifecycle - Ivan, Katbow, Elias
 - What are the different cycles?
 - Which ones triggered when? How used with animation
 - What are they used for?
@@ -27,7 +27,7 @@ When you're ready, the video topics with questions and potentially useful resour
 - When to use state/props
 - How to manage state (link to Redux? Other libraries? Relay? What's next?)
 
-### CSS - Sam, Tasnim, Elias
+### CSS - Sam, Tasnim, Tom, Jacket
 - See how others have structured their CSS
 - Modules to help?
 - Inline styles?
