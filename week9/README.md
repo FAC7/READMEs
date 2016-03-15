@@ -13,8 +13,8 @@ When you're ready, the video topics with questions and potentially useful resour
 ### Backend - Ellie, Jackum, Mireia, Owen
 - Serving the React Bundle
 - Making Requests to the server
-- (Webpack configurations), 
-- 
+- Webpack configurations
+
 ### Component Lifecycle - Ivan, Katbow, Jacket
 - What are the different cycles?
 - Which ones triggered when? How used with animation
