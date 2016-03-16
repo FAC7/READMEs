@@ -4,12 +4,23 @@ import ReactDOM from 'react-dom';
 
 
 class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            inlineStyle: {
+            color: 'blue',
+            fontSize: '12em'
+        }
+    };
+}
+
     render(){
-        return (
+
+        return(
         <div>
-        <h1>{this.props.txt}</h1>
+        <h1 style={this.state.inlineStyle}>{this.props.txt}</h1>
         </div>
-        )
+    )
     }
 }
 
