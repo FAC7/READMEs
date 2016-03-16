@@ -20,7 +20,7 @@ Inline styles are specified as an object. Keys are in camel case and and values 
         };
 
 ```
-To apply styling to an element set its style tag to the name of the object, inside curly brackets.
+To apply styling to an element, set its style tag to the name of the object inside curly brackets.
 ```
 render(){
   return(
@@ -30,6 +30,35 @@ render(){
     )
 }
 ```
+
+## When to require a separate CSS file
+* When styling layout or general appearance.
+* Use the `require` method like so:
+```javascript
+require('./styles.css');
+```
+* You'll need to `npm install` the css-loader and style-loader npm modules (see the package.json).
+* Make sure your webpack.config.js contains the following code:
+```javascript
+{
+    test: /\.css$/,
+    loader: 'style-loader!css-loader'
+  }
+```
+
+## How to style inline with media queries and 'CSS magic' like 'hover'
+* Use an npm module called radium.
+* This allows you to implement this functionality as you normally would in a normal CSS file.
+* You'll need to require radium in the normal way:
+```javascript
+var Radium = require('radium');
+```
+
+## Conclusion
+* State should be fully owned by the component.
+* 'Stateful' classes should be removed from the DOM and CSS.
+* CSS should only deal with appearance.
+* This method should help reduce the cost of change in the future.
 
 ## References
 * [Stack OverFlow best practices with CSS in react](http://stackoverflow.com/questions/26882177/react-js-inline-style-best-practices)
@@ -46,3 +75,4 @@ render(){
 * [color NPM module docs - use for inline color manipulation](https://www.npmjs.com/package/color)
 * [classnames NPM module docs - use to chain classes together inline](https://www.npmjs.com/package/classnames)
 * [css-loader NPM module docs - use to load a css file per component](https://www.npmjs.com/package/css-loader)
+* [radium NPM module docs - use for media queries and css magic](https://www.npmjs.com/package/radium)
