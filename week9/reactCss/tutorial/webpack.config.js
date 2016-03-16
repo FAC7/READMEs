@@ -1,10 +1,10 @@
 module.exports = {
   entry: {
-    javascript: './app.js',
+    javascript: './app3.js',
     html: './index.html'
   },
   output: {
-    filename: 'app.js',
+    filename: 'app3.js',
     path: __dirname + '/dist'
   },
   module: {
