@@ -9,6 +9,27 @@ Style can be broken down into 3 main concepts:
 ## When to use inline styling?
 * When styling elements involved in state and behaviour.
 
+## Inline styling
+
+Inline styles are specified as an object. Keys are in camel case and and values are usually a string. But Vendor prefixes other than ms should begin with a capital letter. e.g. WebkitTransition
+```
+
+            inlineStyle = {
+            color: 'blue',
+            fontSize: '12em'
+        };
+
+```
+To apply styling to an element set its style tag to the name of the object, inside curly brackets.
+```
+render(){
+  return(
+    <div>
+      <h1 style={inlineStyle}>Hello World</h1>
+    </div>
+    )
+}
+```
 
 ## References
 * [Stack OverFlow best practices with CSS in react](http://stackoverflow.com/questions/26882177/react-js-inline-style-best-practices)
@@ -18,6 +39,7 @@ Style can be broken down into 3 main concepts:
 * [React: from Noob to Pro](https://www.youtube.com/watch?v=NHzUPnRwqXY)
 * [React: CSS in JS by Christopher "vjeux" Chedeau](https://speakerdeck.com/vjeux/react-css-in-js)
 * [Medium Article: Modularise CSS the React way](https://medium.com/@jviereck/modularise-css-the-react-way-1e817b317b04#.irubo4epp)
+* [Facebook inline-styles](https://facebook.github.io/react/tips/inline-styles.html)
 
 
 ## NPM modules
