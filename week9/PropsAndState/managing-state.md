@@ -28,4 +28,4 @@ Redux is very popular. However, the following frameworks will also manage state.
 * [Flux](https://facebook.github.io/flux/docs/overview.html) (pre-cursor of Redux, becoming less popular)
 
 ## REFERENCES
-* [**Do not view this at your own risk!!!**]()
+* [**Do not view this at your own risk!!!**](https://egghead.io/series/getting-started-with-redux)
