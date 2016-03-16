@@ -101,7 +101,7 @@ In the above function, whatever the user types into the input box will be displa
 
 Use props (this.props) to access parameters passed from the parent.
 
-## TUTORIAL
+## TUTORIAL SCREENCAST
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=aFNMkYDjIkM
 " target="_blank"><img src="http://img.youtube.com/vi/aFNMkYDjIkM/0.jpg"
 alt="REACT JS TUTORIAL ON PROPS & STATE" width="240" height="180" border="10" /></a>
