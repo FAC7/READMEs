@@ -32,9 +32,7 @@ The updating state lifecycle calls shouldComponentUpdate immediately before comp
 Lastly, the updating props lifecycle calls the componentWillReceiveProps immediately before shouldComponentUpdate. This method can be used to change the state based on examining the next props object (via the argument) and the current props object (via this.props). Like with componentWillMount, a setState call in this method will not cause an additional render. Note that componentWillReceiveProps is called whenever props are passed to a Component, regardless of whether they are different from before.
 
 ## Cycle 3: Unmounting
-The unmounting lifecycle consists of only one method: componentWillUnmount. This is called immediately before a component is removed from the Virtual DOM. This event is typically triggered by a call to ReactDOM.unmountComponentAtNode.
-
-
+The unmounting lifecycle consists of only one method: componentWillUnmount. This is called immediately before a component is removed from the Virtual DOM. This event is typically triggered by a call to ReactDOM.unmountComponentAtNode. You can use this method to perform any cleanup operations you might want to do, such as clearing setIntervals or aborting AJAX requests.
 
 ## Summary
 (Show table again)
