@@ -38,15 +38,15 @@ give your password when prompted. The password will be hidden from the console.
 
 Type Ctrl+D or \q to quit the posgreSQL prompt.
 
-## some basic functions
-
-Another way to get into server is to type in your terminal
+As a side point. Another way to get into server (on ubuntu) is to type in your terminal
 
 ``` sudo su ```
 
 then
 
 ```su - postgres```
+
+## some basic functions
 
 
 ### create a database
