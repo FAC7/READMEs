@@ -1,0 +1,16 @@
+{
+  "name": "hapi-error",
+  "version": "1.0.0",
+  "description": "## Intro * Hapi deals with errors internally by wrapping them in a Boom object.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^13.0.0",
+    "vision": "^4.0.1"
+  }
+}
