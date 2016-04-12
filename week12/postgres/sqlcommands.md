@@ -4,7 +4,7 @@
 
 SQL (Structured Query Language) is a programming language designed to manage data stored in relational databases.
 
-SQL queries allow us to communicate with a database by asking questions and having the result set return data relevant to the question.
+SQL queries allow us to communicate with a database by asking questions and having the result set return data relevant to the question..
 
 'PostgreSQL is a general purpose and object-relational database management system'
 
