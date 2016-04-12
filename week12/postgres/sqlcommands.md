@@ -97,7 +97,7 @@ MAX() is a function that takes the name of a column as an argument and returns t
 ## MIN
 ```SQL
 SELECT MIN(column_name)
-FROM table_name;
+FROM table_name; 
 MIN() is a function that takes the name of a column as an argument and returns the smallest value in that column.
 ```
 ## OR
