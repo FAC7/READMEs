@@ -59,6 +59,7 @@ Before discussing bindActionCreators, it is important to bear in mind that:
 In order for an action to be **wrapped in a dispatch call**, we will need bindActionCreators
 
 These functions call an action creator and immediately dispatch its result to a specific store instance
+
 **Steps**:
 * Define an action creator which returns an action, for example:
 ```js
@@ -82,6 +83,7 @@ As you may have noticed, it needs the dispatch context so, for a particular comp
 ```js
 const mapDispatchToProps = (dispatch) => {
   return bindActionCreators(actionCreator, dispatch)
+}
 ```
 
 ### createStore
